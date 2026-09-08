@@ -1,0 +1,1153 @@
+﻿Date;Libellé;Montant;Catégorie;Type;Source;Feuille;Ligne
+2026-09-01;Salaire Pierre;5226.16;Recettes;recette;Financements.xlsx;Septembre 2026;3
+2026-09-01;Salaire Sterenn;2086.77;Recettes;recette;Financements.xlsx;Septembre 2026;4
+2026-09-01;Note de frais Igienair;160.89;Recettes;recette;Financements.xlsx;Septembre 2026;8
+2026-09-01;Remboursement Padel Edouard;4.0;Recettes;recette;Financements.xlsx;Septembre 2026;9
+2026-09-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Septembre 2026;3
+2026-09-01;Engie Elouen;-66.32;Charges;depense_prevue;Financements.xlsx;Septembre 2026;5
+2026-09-01;Argent de poche Arthur;-155.0;Charges;depense_prevue;Financements.xlsx;Septembre 2026;6
+2026-09-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Septembre 2026;7
+2026-09-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Septembre 2026;8
+2026-09-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Septembre 2026;27
+2026-09-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Septembre 2026;32
+2026-09-01;Urssaaf;-34.0;Logement;depense_prevue;Financements.xlsx;Septembre 2026;36
+2026-09-01;Vinted;-22.59;Vêtements;depense_non_prevue;Financements.xlsx;Septembre 2026;44
+2026-09-01;Pharmacie;-38.2;Medical;depense_non_prevue;Financements.xlsx;Septembre 2026;45
+2026-09-01;Amazon;-9.99;Divers;depense_non_prevue;Financements.xlsx;Septembre 2026;46
+2026-09-01;Vinted;-46.49;Vêtements;depense_non_prevue;Financements.xlsx;Septembre 2026;47
+2026-09-01;Leclerc;-37.92;Courses;depense_non_prevue;Financements.xlsx;Septembre 2026;48
+2026-09-01;Leclerc;-38.72;Courses;depense_non_prevue;Financements.xlsx;Septembre 2026;49
+2026-09-01;Materiel Compresseur;-52.92;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Septembre 2026;50
+2026-09-01;OVH Site Internet Hand;-18.7;Divers;depense_non_prevue;Financements.xlsx;Septembre 2026;51
+2026-09-01;Coiffeur Ael;-25.0;Divers;depense_non_prevue;Financements.xlsx;Septembre 2026;52
+2026-09-01;Lidl;-11.75;Courses;depense_non_prevue;Financements.xlsx;Septembre 2026;53
+2026-09-01;Cafran;-98.37;Courses;depense_non_prevue;Financements.xlsx;Septembre 2026;54
+2026-09-01;Cultura;-118.97;Scolarité;depense_non_prevue;Financements.xlsx;Septembre 2026;55
+2026-09-01;Plan Etabli;-10.0;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Septembre 2026;56
+2026-09-01;Carrefour Planguenoual;-3.73;Courses;depense_non_prevue;Financements.xlsx;Septembre 2026;57
+2026-09-01;SuperU;-63.74;Courses;depense_non_prevue;Financements.xlsx;Septembre 2026;58
+2026-08-01;Salaire Pierre;5393.99;Recettes;recette;Financements.xlsx;Aout 2026;3
+2026-08-01;Salaire Sterenn;1828.73;Recettes;recette;Financements.xlsx;Aout 2026;4
+2026-08-01;CAF;114.19;Recettes;recette;Financements.xlsx;Aout 2026;5
+2026-08-01;Remboursement Leroy;27.06;Recettes;recette;Financements.xlsx;Aout 2026;9
+2026-08-01;Epargne Travaux;742.0;Recettes;recette;Financements.xlsx;Aout 2026;10
+2026-08-01;Epargne Travaux;520.0;Recettes;recette;Financements.xlsx;Aout 2026;11
+2026-08-01;Remboursement Axa;264.09;Recettes;recette;Financements.xlsx;Aout 2026;12
+2026-08-01;Remboursement Notaire;789.8;Recettes;recette;Financements.xlsx;Aout 2026;13
+2026-08-01;Epargne Compresseur;523.7;Recettes;recette;Financements.xlsx;Aout 2026;14
+2026-08-01;Scolarité Pret Arthur;726.96;Recettes;recette;Financements.xlsx;Aout 2026;15
+2026-08-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Aout 2026;3
+2026-08-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Aout 2026;5
+2026-08-01;Argent de poche Arthur;-14.99;Charges;depense_prevue;Financements.xlsx;Aout 2026;6
+2026-08-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Aout 2026;7
+2026-08-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Aout 2026;8
+2026-08-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Aout 2026;9
+2026-08-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Aout 2026;10
+2026-08-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Aout 2026;11
+2026-08-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Aout 2026;12
+2026-08-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;13
+2026-08-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Aout 2026;15
+2026-08-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;16
+2026-08-01;Sosh Ael;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;18
+2026-08-01;Sosh Elouen;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;19
+2026-08-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;20
+2026-08-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Aout 2026;21
+2026-08-01;AxaHabitation;-62.88;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Aout 2026;23
+2026-08-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Aout 2026;24
+2026-08-01;Axa Voiture;-88.03;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Aout 2026;25
+2026-08-01;Suravenir Garanties Vie;-18.99;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Aout 2026;26
+2026-08-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Aout 2026;27
+2026-08-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;28
+2026-08-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Aout 2026;30
+2026-08-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;31
+2026-08-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;32
+2026-08-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Aout 2026;33
+2026-08-01;Urssaaf;-129.86;Logement;depense_prevue;Financements.xlsx;Aout 2026;36
+2026-08-01;Cotisation Eurocompte;-19.03;Charges;depense_prevue;Financements.xlsx;Aout 2026;37
+2026-08-01;Indivision;-33.89;Charges;depense_prevue;Financements.xlsx;Aout 2026;38
+2026-08-01;Mademoiselle;-146.0;Vêtements;depense_non_prevue;Financements.xlsx;Aout 2026;45
+2026-08-01;Maryannick;-21.9;Vêtements;depense_non_prevue;Financements.xlsx;Aout 2026;46
+2026-08-01;Buvette Estivales;-14.0;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;47
+2026-08-01;Panzini;-25.0;Vêtements;depense_non_prevue;Financements.xlsx;Aout 2026;48
+2026-08-01;Boulangerie;-13.2;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;49
+2026-08-01;Leclerc;-48.21;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;50
+2026-08-01;Mr Bricolage;-23.85;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;51
+2026-08-01;ChargeMap;-8.76;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Aout 2026;52
+2026-08-01;Pharmacie;-78.7;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;53
+2026-08-01;Ikea;-60.91;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;54
+2026-08-01;Mr Bricolage;-11.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;55
+2026-08-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;56
+2026-08-01;Rory Langueux;-23.1;Vêtements;depense_non_prevue;Financements.xlsx;Aout 2026;57
+2026-08-01;Leroy Merlin;-185.35;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;58
+2026-08-01;Ikea;-335.93;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;59
+2026-08-01;Amazon;-36.29;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;60
+2026-08-01;Amazon;-279.0;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;61
+2026-08-01;Leclerc;-182.67;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;62
+2026-08-01;Marché;-35.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;63
+2026-08-01;Marché;-40.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;64
+2026-08-01;Amazon;-10.99;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;65
+2026-08-01;Amazon;-19.89;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;66
+2026-08-01;Optique;-3.0;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;67
+2026-08-01;Leclerc;-47.17;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;68
+2026-08-01;Ptit Comod;-8.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;69
+2026-08-01;Leclerc;-39.59;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;70
+2026-08-01;Amazon;-16.98;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;71
+2026-08-01;Amazon;-14.99;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;72
+2026-08-01;Cube gaz;-26.97;Charges;depense_non_prevue;Financements.xlsx;Aout 2026;73
+2026-08-01;Baramoules;-159.1;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;74
+2026-08-01;Pharmacie;-13.3;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;75
+2026-08-01;Pizza Enfants;-44.25;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;76
+2026-08-01;La Voile;-34.0;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;77
+2026-08-01;Leclerc;-6.51;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;78
+2026-08-01;Pharmacie;-15.4;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;79
+2026-08-01;Boulangerie;-6.5;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;80
+2026-08-01;Biscuiterie;-54.3;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;81
+2026-08-01;Leclerc;-11.78;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;82
+2026-08-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;83
+2026-08-01;Arthur Rennes;-50.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;84
+2026-08-01;Leclerc;-33.49;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;85
+2026-08-01;Leclerc;-43.24;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;86
+2026-08-01;Train Arthur;-19.6;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Aout 2026;87
+2026-08-01;Leclerc;-180.89;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;88
+2026-08-01;Elouen Psy;-180.0;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;89
+2026-08-01;Lunette;-149.0;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;90
+2026-08-01;Epargne;-700.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;91
+2026-08-01;Boulangerie;-5.2;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;92
+2026-08-01;VSM;-23.3;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;93
+2026-08-01;PPG;-46.4;Vêtements;depense_non_prevue;Financements.xlsx;Aout 2026;94
+2026-08-01;Leclerc;-8.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;95
+2026-08-01;Leclerc;-59.88;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;96
+2026-08-01;Boulangerie;-15.2;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;97
+2026-08-01;Bevan;-27.1;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;98
+2026-08-01;Baramoules;-127.9;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;99
+2026-08-01;Cagnotte Pascal;-30.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;100
+2026-08-01;Librairie;-8.9;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;101
+2026-08-01;Lambr1;-22.5;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;102
+2026-08-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;103
+2026-08-01;Compresseur;-523.7;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;104
+2026-08-01;Amazon;-18.98;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Aout 2026;105
+2026-08-01;Global Amsterdam;-112.76;Vêtements;depense_non_prevue;Financements.xlsx;Aout 2026;106
+2026-08-01;Office du Tourisme;-26.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;107
+2026-08-01;Cellier du Goelo;-11.6;Logement;depense_non_prevue;Financements.xlsx;Aout 2026;108
+2026-08-01;Leclerc;-127.03;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;109
+2026-08-01;Pharmacie;-26.15;Medical;depense_non_prevue;Financements.xlsx;Aout 2026;110
+2026-08-01;Erquy CB;-12.8;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;111
+2026-08-01;SDVA Quilper;-16.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;112
+2026-08-01;Leclerc;-43.7;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;113
+2026-08-01;Leclerc;-49.67;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;114
+2026-08-01;Nonnet;-52.45;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;115
+2026-08-01;Apero La Voile;-60.0;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;116
+2026-08-01;Volley Tournoi;-8.0;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;117
+2026-08-01;Cafran Tregeux;-85.4;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;118
+2026-08-01;Mr Bricolage;-15.2;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Aout 2026;119
+2026-08-01;Leclerc;-43.35;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;120
+2026-08-01;Elouen Psy;-135.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Aout 2026;121
+2026-08-01;Leclerc;-19.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;122
+2026-08-01;Leclerc;-30.8;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;123
+2026-08-01;Lunettes;-7.39;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;124
+2026-08-01;Action Paimpol;-33.27;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;125
+2026-08-01;Courses via Arthur;-18.54;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;126
+2026-08-01;EDF;-27.56;Charges;depense_non_prevue;Financements.xlsx;Aout 2026;127
+2026-08-01;VSM Tregeux;-28.2;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;128
+2026-08-01;Leclerc;-184.61;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;129
+2026-08-01;La Fabrique;-8.3;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;130
+2026-08-01;MushNGo;-59.88;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;131
+2026-08-01;Metro Rennes;-3.4;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;132
+2026-08-01;Café CAP Gemini;-0.65;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;133
+2026-08-01;MrFroz;-16.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;134
+2026-08-01;Boulangerie;-8.6;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;135
+2026-08-01;Foir'Fouill;-14.99;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;136
+2026-08-01;Action Paimpol;-21.22;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;137
+2026-08-01;Darty Arthur;-157.95;Scolarité;depense_non_prevue;Financements.xlsx;Aout 2026;138
+2026-08-01;Hello Asso Hand Licence;-156.32;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;139
+2026-08-01;Leclerc;-11.62;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;140
+2026-08-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;141
+2026-08-01;Leclerc;-26.88;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;142
+2026-08-01;Festival Ael;-29.99;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;143
+2026-08-01;Stamp St Brieuc;-9.0;Divers;depense_non_prevue;Financements.xlsx;Aout 2026;144
+2026-08-01;Cultura;-256.37;Scolarité;depense_non_prevue;Financements.xlsx;Aout 2026;145
+2026-08-01;Leclerc;-24.32;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;146
+2026-08-01;Leclerc Arthur;-284.32;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;147
+2026-08-01;Nonnet;-6.5;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;148
+2026-08-01;Concert;-131.99;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;149
+2026-08-01;Hand Arthur;-156.32;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;150
+2026-08-01;Baramoules;-202.0;Loisirs;depense_non_prevue;Financements.xlsx;Aout 2026;151
+2026-08-01;Boulangerie;-5.6;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;152
+2026-08-01;Boulangerie;-20.0;Courses;depense_non_prevue;Financements.xlsx;Aout 2026;153
+2026-07-01;Salaire Pierre;5651.76;Recettes;recette;Financements.xlsx;Juillet 2026;3
+2026-07-01;Salaire Sterenn;1938.46;Recettes;recette;Financements.xlsx;Juillet 2026;4
+2026-07-01;CAF;114.19;Recettes;recette;Financements.xlsx;Juillet 2026;5
+2026-07-01;Note de frais Igienair;261.76;Recettes;recette;Financements.xlsx;Juillet 2026;8
+2026-07-01;Note de Frais Altran;69.75;Recettes;recette;Financements.xlsx;Juillet 2026;9
+2026-07-01;Pret Arthur Scolarité;105.0;Recettes;recette;Financements.xlsx;Juillet 2026;10
+2026-07-01;Pret Arthur Scolarité;178.0;Recettes;recette;Financements.xlsx;Juillet 2026;11
+2026-07-01;Cadeau copains;580.0;Recettes;recette;Financements.xlsx;Juillet 2026;12
+2026-07-01;Scolarité Arthur/Elouen;720.0;Recettes;recette;Financements.xlsx;Juillet 2026;13
+2026-07-01;Baby Sitting Arthur;40.0;Recettes;recette;Financements.xlsx;Juillet 2026;14
+2026-07-01;Virement Impots;3165.0;Recettes;recette;Financements.xlsx;Juillet 2026;15
+2026-07-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Juillet 2026;3
+2026-07-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Juillet 2026;5
+2026-07-01;Argent de poche Arthur;-14.99;Charges;depense_prevue;Financements.xlsx;Juillet 2026;6
+2026-07-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Juillet 2026;7
+2026-07-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Juillet 2026;8
+2026-07-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Juillet 2026;9
+2026-07-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Juillet 2026;10
+2026-07-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Juillet 2026;11
+2026-07-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Juillet 2026;12
+2026-07-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;13
+2026-07-01;EDF Arthur;-65.0;Charges;depense_prevue;Financements.xlsx;Juillet 2026;14
+2026-07-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Juillet 2026;15
+2026-07-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;16
+2026-07-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;17
+2026-07-01;Sosh Elouen;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;19
+2026-07-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;20
+2026-07-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juillet 2026;21
+2026-07-01;AxaHabitation;-62.88;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juillet 2026;23
+2026-07-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Juillet 2026;24
+2026-07-01;Axa Voiture;-88.03;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juillet 2026;25
+2026-07-01;Suravenir Garanties Vie;-18.99;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juillet 2026;26
+2026-07-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Juillet 2026;27
+2026-07-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;28
+2026-07-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Juillet 2026;30
+2026-07-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;31
+2026-07-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;32
+2026-07-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juillet 2026;33
+2026-07-01;St Charles;-278.3;Scolarité;depense_prevue;Financements.xlsx;Juillet 2026;34
+2026-07-01;Ménage;-170.0;Logement;depense_prevue;Financements.xlsx;Juillet 2026;35
+2026-07-01;Urssaaf;-136.0;Logement;depense_prevue;Financements.xlsx;Juillet 2026;36
+2026-07-01;Cotisation Eurocompte;-19.03;Charges;depense_prevue;Financements.xlsx;Juillet 2026;37
+2026-07-01;Indivision;-33.89;Charges;depense_prevue;Financements.xlsx;Juillet 2026;38
+2026-07-01;Feuillette Repas Tregeux;-26.89;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;45
+2026-07-01;Apero BreizhIzel;-4.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;46
+2026-07-01;Apero BreizhIzel;-13.5;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;47
+2026-07-01;Apero BreizhIzel;-13.5;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;48
+2026-07-01;Apero BreizhIzel;-26.5;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;49
+2026-07-01;Apero BreizhIzel;-13.5;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;50
+2026-07-01;Metro Rennes;-3.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juillet 2026;51
+2026-07-01;Concert Ael;-131.45;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;52
+2026-07-01;Café CapG;-0.5;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;53
+2026-07-01;Boulangerie Rennes;-6.7;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;54
+2026-07-01;Apero BreizhIzel;-8.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;55
+2026-07-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;56
+2026-07-01;Cigarettes;-14.5;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;57
+2026-07-01;Train Pierre;-17.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juillet 2026;58
+2026-07-01;Train Pierre;-17.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juillet 2026;59
+2026-07-01;Dejeuner Rennes;-20.5;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;60
+2026-07-01;Apero BreizhIzel;-4.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;61
+2026-07-01;Apero BreizhIzel;-4.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;62
+2026-07-01;Vinted;-63.1;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;63
+2026-07-01;Boulangerie;-6.1;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;64
+2026-07-01;Leclerc;-30.37;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;65
+2026-07-01;Hotel Igienair;-105.42;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;66
+2026-07-01;ChargeMap;-14.44;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juillet 2026;67
+2026-07-01;Buvette GrandHuit;-12.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;68
+2026-07-01;Shel St Gilles;-14.0;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;69
+2026-07-01;Leclerc;-21.26;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;70
+2026-07-01;Pharmacie;-46.1;Medical;depense_non_prevue;Financements.xlsx;Juillet 2026;71
+2026-07-01;Ordures Ménagères;-345.48;Charges;depense_non_prevue;Financements.xlsx;Juillet 2026;72
+2026-07-01;Leroy Merlin;-61.56;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;73
+2026-07-01;Leroy Merlin;-156.14;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;74
+2026-07-01;Leclerc;-210.95;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;75
+2026-07-01;Boulangerie;-5.4;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;76
+2026-07-01;Leclerc;-122.55;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;77
+2026-07-01;Leclerc;-7.34;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;78
+2026-07-01;Intermarché Trégeux;-75.49;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;79
+2026-07-01;Lidl;-32.07;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;80
+2026-07-01;Multistore;-46.0;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;81
+2026-07-01;Decathlon;-123.97;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;82
+2026-07-01;Vinted;-41.95;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;83
+2026-07-01;Inscription Fac Elouen;-255.0;Scolarité;depense_non_prevue;Financements.xlsx;Juillet 2026;84
+2026-07-01;Breizh;-11.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;85
+2026-07-01;Leclerc;-12.64;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;86
+2026-07-01;Breizh;-8.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;87
+2026-07-01;Baramoules;-129.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;88
+2026-07-01;Galettes GDD;-23.4;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;89
+2026-07-01;Biscuiterie;-36.5;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;90
+2026-07-01;Leclerc;-34.94;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;91
+2026-07-01;Inscription Fac Arthur;-105.0;Scolarité;depense_non_prevue;Financements.xlsx;Juillet 2026;92
+2026-07-01;Inscription Fac Arthur;-178.0;Scolarité;depense_non_prevue;Financements.xlsx;Juillet 2026;93
+2026-07-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;94
+2026-07-01;Leclerc;-95.36;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;95
+2026-07-01;Marché Fruits;-9.7;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;96
+2026-07-01;Marché Fruits;-14.2;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;97
+2026-07-01;Lidl;-24.38;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;98
+2026-07-01;Frais Bancaires;-10.08;Charges;depense_non_prevue;Financements.xlsx;Juillet 2026;99
+2026-07-01;Leclerc;-10.39;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;100
+2026-07-01;Leclerc;-53.11;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;101
+2026-07-01;Virement Elouen;-365.0;Charges;depense_non_prevue;Financements.xlsx;Juillet 2026;102
+2026-07-01;Epargne;-580.0;Epargne;depense_non_prevue;Financements.xlsx;Juillet 2026;103
+2026-07-01;Sport 2000;-74.96;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;104
+2026-07-01;Leroy Merlin;-69.88;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;105
+2026-07-01;Leclerc;-57.02;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;106
+2026-07-01;Leclerc;-73.54;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;107
+2026-07-01;Leclerc;-75.87;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;108
+2026-07-01;Leroy Merlin;-25.8;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;109
+2026-07-01;Leroy Merlin;-106.89;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;110
+2026-07-01;Boulangerie;-7.8;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;111
+2026-07-01;Vélo Train;-4.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;112
+2026-07-01;BabySitting Arthur;-40.0;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;113
+2026-07-01;SNCF Arthur;-32.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juillet 2026;114
+2026-07-01;Carte Jeune Arthur;-49.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juillet 2026;115
+2026-07-01;Leclerc;-9.52;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;116
+2026-07-01;Sport 2000;-2.5;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;117
+2026-07-01;Decathlon;-42.95;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;118
+2026-07-01;Bureau Vallée;-3.9;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;119
+2026-07-01;Bureau Vallée;-13.28;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;120
+2026-07-01;Croquettes Oska;-47.01;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;121
+2026-07-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;122
+2026-07-01;Leclerc;-14.59;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;123
+2026-07-01;Leroy Merlin;-87.21;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;124
+2026-07-01;Nuances et Couleurs;-180.05;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;125
+2026-07-01;Leclerc;-10.46;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;126
+2026-07-01;Apero Baramoules;-11.2;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;127
+2026-07-01;Lidl;-75.61;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;128
+2026-07-01;Leclerc;-86.19;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;129
+2026-07-01;Leclerc;-228.3;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;130
+2026-07-01;Virement Epargne;-2000.0;Epargne;depense_non_prevue;Financements.xlsx;Juillet 2026;131
+2026-07-01;Pharmacie;-46.7;Medical;depense_non_prevue;Financements.xlsx;Juillet 2026;132
+2026-07-01;Leclerc;-81.36;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;133
+2026-07-01;Buvette Estivales;-3.5;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;134
+2026-07-01;Mignon;-20.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;135
+2026-07-01;Buvette Estivales;-8.5;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;136
+2026-07-01;Buvette Estivales;-9.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;137
+2026-07-01;Intersport;-25.99;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;138
+2026-07-01;Leroy Merlin;-119.12;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;139
+2026-07-01;Amazon;-17.58;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;140
+2026-07-01;Sarenza;-72.0;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;141
+2026-07-01;Boulangerie;-6.9;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;142
+2026-07-01;Mr Bricolage;-19.75;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;143
+2026-07-01;Mr Bricolage;-22.5;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;144
+2026-07-01;Mr Bricolage;-75.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;145
+2026-07-01;Decathlon Loan;-120.0;Vêtements;depense_non_prevue;Financements.xlsx;Juillet 2026;146
+2026-07-01;Boulangerie;-10.95;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;147
+2026-07-01;Buvette Estivales;-5.0;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;148
+2026-07-01;Carrefour;-6.69;Courses;depense_non_prevue;Financements.xlsx;Juillet 2026;149
+2026-07-01;Pharmacie;-26.5;Medical;depense_non_prevue;Financements.xlsx;Juillet 2026;150
+2026-07-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juillet 2026;151
+2026-07-01;Mr Bricolage;-42.0;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;152
+2026-07-01;Baramoules;-144.2;Loisirs;depense_non_prevue;Financements.xlsx;Juillet 2026;153
+2026-07-01;Leroy Merlin;-84.61;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juillet 2026;154
+2026-07-01;Urssaaf;-52.31;Charges;depense_non_prevue;Financements.xlsx;Juillet 2026;155
+2026-06-01;Salaire Pierre;5273.11;Recettes;recette;Financements.xlsx;Juin 2026;3
+2026-06-01;Salaire Sterenn;1828.73;Recettes;recette;Financements.xlsx;Juin 2026;4
+2026-06-01;CAF;114.19;Recettes;recette;Financements.xlsx;Juin 2026;5
+2026-06-01;Mutuelle;9.45;Recettes;recette;Financements.xlsx;Juin 2026;9
+2026-06-01;Note de Frais Igienair;76.64;Recettes;recette;Financements.xlsx;Juin 2026;10
+2026-06-01;Mutuelle;9.0;Recettes;recette;Financements.xlsx;Juin 2026;11
+2026-06-01;Remboursement Amazon;43.34;Recettes;recette;Financements.xlsx;Juin 2026;12
+2026-06-01;Padel Edouard;4.0;Recettes;recette;Financements.xlsx;Juin 2026;13
+2026-06-01;Padel Didier;4.0;Recettes;recette;Financements.xlsx;Juin 2026;14
+2026-06-01;Note de Frais Cap;57.3;Recettes;recette;Financements.xlsx;Juin 2026;15
+2026-06-01;Mutuelle Elouen;30.9;Recettes;recette;Financements.xlsx;Juin 2026;16
+2026-06-01;Epargne;500.0;Recettes;recette;Financements.xlsx;Juin 2026;17
+2026-06-01;Epargne;300.0;Recettes;recette;Financements.xlsx;Juin 2026;18
+2026-06-01;Remboursement MicroOnde Papa;91.0;Recettes;recette;Financements.xlsx;Juin 2026;19
+2026-06-01;CPAM;4.0;Recettes;recette;Financements.xlsx;Juin 2026;20
+2026-06-01;Remboursement Ael;168.0;Recettes;recette;Financements.xlsx;Juin 2026;21
+2026-06-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Juin 2026;3
+2026-06-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Juin 2026;5
+2026-06-01;Argent de poche Arthur;-14.99;Charges;depense_prevue;Financements.xlsx;Juin 2026;6
+2026-06-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Juin 2026;7
+2026-06-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Juin 2026;8
+2026-06-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Juin 2026;9
+2026-06-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Juin 2026;10
+2026-06-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Juin 2026;11
+2026-06-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Juin 2026;12
+2026-06-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;13
+2026-06-01;EDF Arthur;-65.0;Charges;depense_prevue;Financements.xlsx;Juin 2026;14
+2026-06-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Juin 2026;15
+2026-06-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;16
+2026-06-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;17
+2026-06-01;Sosh Elouen;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;19
+2026-06-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;20
+2026-06-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juin 2026;21
+2026-06-01;AxaHabitation;-62.88;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juin 2026;23
+2026-06-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Juin 2026;24
+2026-06-01;Axa Voiture;-88.03;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Juin 2026;25
+2026-06-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Juin 2026;27
+2026-06-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;28
+2026-06-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Juin 2026;30
+2026-06-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Juin 2026;31
+2026-06-01;St Charles;-196.9;Scolarité;depense_prevue;Financements.xlsx;Juin 2026;34
+2026-06-01;Ménage;-68.0;Logement;depense_prevue;Financements.xlsx;Juin 2026;35
+2026-06-01;Urssaaf;-78.43;Logement;depense_prevue;Financements.xlsx;Juin 2026;36
+2026-06-01;Cotisation Eurocompte;-19.03;Charges;depense_prevue;Financements.xlsx;Juin 2026;37
+2026-06-01;Indivision;-33.89;Charges;depense_prevue;Financements.xlsx;Juin 2026;38
+2026-06-01;Leroy Merlin;-5.99;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juin 2026;45
+2026-06-01;Leroy Merlin;-31.89;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juin 2026;46
+2026-06-01;Leroy Merlin;-35.98;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juin 2026;47
+2026-06-01;Soirée Hand;-2.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;48
+2026-06-01;Soirée Hand;-4.5;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;49
+2026-06-01;Soirée Hand;-5.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;50
+2026-06-01;Soirée Hand;-6.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;51
+2026-06-01;Soirée Hand;-9.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;52
+2026-06-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;53
+2026-06-01;Tartapain Gateau Mamou;-44.58;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;54
+2026-06-01;Pacotille St Alban;-67.5;Vêtements;depense_non_prevue;Financements.xlsx;Juin 2026;55
+2026-06-01;Leclerc;-15.68;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;56
+2026-06-01;Sport 2000;-34.98;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;57
+2026-06-01;Leclerc;-61.86;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;58
+2026-06-01;Leclerc;-17.09;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;59
+2026-06-01;Leclerc;-32.88;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;60
+2026-06-01;LeLuc Ploufragan;-84.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;61
+2026-06-01;La Poste Solen;-5.49;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;62
+2026-06-01;ChargeMap;-133.55;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juin 2026;63
+2026-06-01;Machine à coudre;-200.99;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juin 2026;64
+2026-06-01;Leclerc;-6.86;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;65
+2026-06-01;Leclerc Plerin;-41.59;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;66
+2026-06-01;Elouen;-200.0;Charges;depense_non_prevue;Financements.xlsx;Juin 2026;67
+2026-06-01;Decathlon;-24.99;Vêtements;depense_non_prevue;Financements.xlsx;Juin 2026;68
+2026-06-01;Leclerc Ploufragan;-97.77;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;69
+2026-06-01;Leclerc;-45.12;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;70
+2026-06-01;Trelevern;-30.5;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;71
+2026-06-01;Trelevern;-56.1;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;72
+2026-06-01;Piles Appareils;-3.0;Medical;depense_non_prevue;Financements.xlsx;Juin 2026;73
+2026-06-01;Fournil;-4.3;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;74
+2026-06-01;Mistral Ael;-104.7;Vêtements;depense_non_prevue;Financements.xlsx;Juin 2026;75
+2026-06-01;DStockArmor;-18.75;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;76
+2026-06-01;Leclerc;-194.42;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;77
+2026-06-01;Leclerc;-41.95;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;78
+2026-06-01;Cafran;-76.17;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;79
+2026-06-01;La Poste Solen;-9.29;Cadeau;depense_non_prevue;Financements.xlsx;Juin 2026;80
+2026-06-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;81
+2026-06-01;Sarenza;-68.9;Vêtements;depense_non_prevue;Financements.xlsx;Juin 2026;82
+2026-06-01;Biscuiterie Mazé;-88.6;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;83
+2026-06-01;Vélo Ael;-1.2;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;84
+2026-06-01;Vélo Ael;-1.2;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;85
+2026-06-01;L'obele;-13.45;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;86
+2026-06-01;Thé Geoffrey;-66.0;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;87
+2026-06-01;Amazon;-27.54;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;88
+2026-06-01;Pharmacie;-50.25;Medical;depense_non_prevue;Financements.xlsx;Juin 2026;89
+2026-06-01;Leclerc;-1.93;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;90
+2026-06-01;Estivales Hugo;-45.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;91
+2026-06-01;Estivales Ael;-39.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;92
+2026-06-01;Repas AG Hand;-10.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;93
+2026-06-01;Metro Rennes;-3.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juin 2026;94
+2026-06-01;Apple;-0.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;95
+2026-06-01;Snack Aeroport;-7.2;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;96
+2026-06-01;Cigarettes;-15.6;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;97
+2026-06-01;Apple Arthur;-16.99;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;98
+2026-06-01;Repas Toulouse;-24.2;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;99
+2026-06-01;Virement Stephanie Trelevern;-36.28;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;100
+2026-06-01;Vinted;-26.09;Vêtements;depense_non_prevue;Financements.xlsx;Juin 2026;101
+2026-06-01;Apple Arthur;-2.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;102
+2026-06-01;Apple Arthur;-3.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;103
+2026-06-01;Apple Arthur;-3.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;104
+2026-06-01;Apple Arthur;-5.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;105
+2026-06-01;Apple Arthur;-5.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;106
+2026-06-01;Repas JAG Toulouse;-21.65;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;107
+2026-06-01;Lidl;-40.22;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;108
+2026-06-01;Fleurs Delphine;-29.5;Cadeau;depense_non_prevue;Financements.xlsx;Juin 2026;109
+2026-06-01;Lecler;-28.11;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;110
+2026-06-01;Metro Toulouse;-3.8;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juin 2026;111
+2026-06-01;Bar JAG;-16.0;Loisirs;depense_non_prevue;Financements.xlsx;Juin 2026;112
+2026-06-01;Toilettes Toulouse;-1.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;113
+2026-06-01;Apple Arthur;-3.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;114
+2026-06-01;Apple Arthur;-3.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;115
+2026-06-01;Apple Arthur;-5.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;116
+2026-06-01;Apple Arthur;-6.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;117
+2026-06-01;Apple Arthur;-6.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;118
+2026-06-01;Apple Arthur;-6.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;119
+2026-06-01;Apple Arthur;-6.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;120
+2026-06-01;Autoroute;-88.6;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juin 2026;121
+2026-06-01;Vinted;-19.33;Vêtements;depense_non_prevue;Financements.xlsx;Juin 2026;122
+2026-06-01;La Fabriq;-11.0;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;123
+2026-06-01;Repas Toulouse;-32.6;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;124
+2026-06-01;Leclerc;-20.77;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;125
+2026-06-01;Leclerc;-34.42;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;126
+2026-06-01;All Ocean;-49.9;Cadeau;depense_non_prevue;Financements.xlsx;Juin 2026;127
+2026-06-01;Nonnet;-29.45;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;128
+2026-06-01;Leclerc;-4.62;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;129
+2026-06-01;Boulangerie;-6.4;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;130
+2026-06-01;Leclerc;-43.53;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;131
+2026-06-01;Plumbago;-25.0;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juin 2026;132
+2026-06-01;Coiffeur;-70.0;Soins;depense_non_prevue;Financements.xlsx;Juin 2026;133
+2026-06-01;Boulangerie;-11.4;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;134
+2026-06-01;Intermarché Trégeux;-11.05;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;135
+2026-06-01;PDFAid;-1.0;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Juin 2026;136
+2026-06-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juin 2026;137
+2026-06-01;Leclerc;-18.0;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;138
+2026-06-01;But MicroOnde;-90.49;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;139
+2026-06-01;Leclerc;-71.58;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;140
+2026-06-01;Leclerc;-6.47;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;141
+2026-06-01;Cube Gaz;-26.95;Charges;depense_non_prevue;Financements.xlsx;Juin 2026;142
+2026-06-01;Boulangerie Fanch;-6.6;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;143
+2026-06-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Juin 2026;144
+2026-06-01;Leclerc;-42.43;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;145
+2026-06-01;Amazon Disque ponçage;-30.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Juin 2026;146
+2026-06-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;147
+2026-06-01;Leclerc;-45.45;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;148
+2026-06-01;Toilettage;-55.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;149
+2026-06-01;Boulangerie;-7.9;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;150
+2026-06-01;Leclerc;-230.22;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;151
+2026-06-01;Lidl;-148.17;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;152
+2026-06-01;PDFAID;-49.0;Divers;depense_non_prevue;Financements.xlsx;Juin 2026;153
+2026-06-01;Leclerc;-18.12;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;154
+2026-06-01;Leclerc;-26.33;Courses;depense_non_prevue;Financements.xlsx;Juin 2026;155
+2026-05-01;Salaire Pierre;5357.67;Recettes;recette;Financements.xlsx;Mai 2026;3
+2026-05-01;Salaire Sterenn;2011.6;Recettes;recette;Financements.xlsx;Mai 2026;4
+2026-05-01;CAF;114.19;Recettes;recette;Financements.xlsx;Mai 2026;5
+2026-05-01;Remboursement Suravenir;51.15;Recettes;recette;Financements.xlsx;Mai 2026;9
+2026-05-01;Note de frais CAP;55.3;Recettes;recette;Financements.xlsx;Mai 2026;10
+2026-05-01;Remboursement La Redoute;39.99;Recettes;recette;Financements.xlsx;Mai 2026;11
+2026-05-01;Colle Nolwenn;5.0;Recettes;recette;Financements.xlsx;Mai 2026;12
+2026-05-01;Remboursement mutuelle;9.0;Recettes;recette;Financements.xlsx;Mai 2026;13
+2026-05-01;Epargne;1000.0;Recettes;recette;Financements.xlsx;Mai 2026;14
+2026-05-01;CPAM;17.0;Recettes;recette;Financements.xlsx;Mai 2026;15
+2026-05-01;CPAM;12.0;Recettes;recette;Financements.xlsx;Mai 2026;16
+2026-05-01;Mutuelle;18.0;Recettes;recette;Financements.xlsx;Mai 2026;17
+2026-05-01;Mutuelle;9.0;Recettes;recette;Financements.xlsx;Mai 2026;18
+2026-05-01;CPAM;20.05;Recettes;recette;Financements.xlsx;Mai 2026;19
+2026-05-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Mai 2026;3
+2026-05-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Mai 2026;5
+2026-05-01;Argent de poche Arthur;-164.99;Charges;depense_prevue;Financements.xlsx;Mai 2026;6
+2026-05-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Mai 2026;7
+2026-05-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Mai 2026;8
+2026-05-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Mai 2026;9
+2026-05-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Mai 2026;10
+2026-05-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Mai 2026;11
+2026-05-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Mai 2026;12
+2026-05-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;13
+2026-05-01;EDF Arthur;-65.0;Charges;depense_prevue;Financements.xlsx;Mai 2026;14
+2026-05-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Mai 2026;15
+2026-05-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;16
+2026-05-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;17
+2026-05-01;Sosh Elouen;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;19
+2026-05-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;20
+2026-05-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mai 2026;21
+2026-05-01;AxaHabitation;-69.38;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mai 2026;23
+2026-05-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Mai 2026;24
+2026-05-01;Suravenir Voiture;-94.53;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mai 2026;25
+2026-05-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Mai 2026;27
+2026-05-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;28
+2026-05-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Mai 2026;30
+2026-05-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;31
+2026-05-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;32
+2026-05-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mai 2026;33
+2026-05-01;St Charles;-278.3;Scolarité;depense_prevue;Financements.xlsx;Mai 2026;34
+2026-05-01;Ménage;-102.0;Logement;depense_prevue;Financements.xlsx;Mai 2026;35
+2026-05-01;Urssaaf;-129.86;Logement;depense_prevue;Financements.xlsx;Mai 2026;36
+2026-05-01;Cotisation Eurocompte;-19.03;Charges;depense_prevue;Financements.xlsx;Mai 2026;37
+2026-05-01;Indivision;-33.89;Charges;depense_prevue;Financements.xlsx;Mai 2026;38
+2026-05-01;FoireFouille;-12.98;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;46
+2026-05-01;Leclerc;-66.4;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;47
+2026-05-01;Leclerc;-84.83;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;48
+2026-05-01;Decathlon;-21.98;Vêtements;depense_non_prevue;Financements.xlsx;Mai 2026;49
+2026-05-01;Decathlon Colle Hand;-49.98;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;50
+2026-05-01;Café Station;-1.9;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;51
+2026-05-01;Café Station;-2.7;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;52
+2026-05-01;Café Station;-3.5;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;53
+2026-05-01;Traversée Bac;-11.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;54
+2026-05-01;Station;-22.4;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;55
+2026-05-01;Bac Royan;-44.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;56
+2026-05-01;Grand Frais;-15.78;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;57
+2026-05-01;Dr Apel;-30.0;Soins;depense_non_prevue;Financements.xlsx;Mai 2026;58
+2026-05-01;Pharamacie;-58.9;Soins;depense_non_prevue;Financements.xlsx;Mai 2026;59
+2026-05-01;BAr du Bac Royan;-70.5;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;60
+2026-05-01;Avia;-2.7;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;61
+2026-05-01;Avia;-2.7;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;62
+2026-05-01;Avia;-1.9;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;63
+2026-05-01;Avia;-20.7;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;64
+2026-05-01;Traversée Bac;-55.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;65
+2026-05-01;La Fabrique Ploufragan;-9.8;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;66
+2026-05-01;Suravenir;-0.42;Assurances/Mutuelle;depense_non_prevue;Financements.xlsx;Mai 2026;67
+2026-05-01;Metro Rennes;-3.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;68
+2026-05-01;Café CAPG;-0.5;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;69
+2026-05-01;Gouter Rennes;-11.4;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;70
+2026-05-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;71
+2026-05-01;Train Rennes;-34.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;72
+2026-05-01;Commande Focus;-77.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;73
+2026-05-01;Coiffeur;-100.0;Soins;depense_non_prevue;Financements.xlsx;Mai 2026;74
+2026-05-01;Boulangerie;-6.27;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;75
+2026-05-01;Leclerc;-201.42;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;76
+2026-05-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;77
+2026-05-01;Leclerc;-36.81;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;78
+2026-05-01;Parfum Ael;-87.9;Cadeau;depense_non_prevue;Financements.xlsx;Mai 2026;79
+2026-05-01;Enceinte Ael;-109.99;Cadeau;depense_non_prevue;Financements.xlsx;Mai 2026;80
+2026-05-01;Bureau Vallée;-6.38;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;81
+2026-05-01;Bureau Vallée;-19.64;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;82
+2026-05-01;Retrait Marché;-50.0;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;83
+2026-05-01;Sushi;-53.0;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;84
+2026-05-01;Cultura;-46.39;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;85
+2026-05-01;MArché;-10.25;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;86
+2026-05-01;Vaumadeuc;-26.2;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;87
+2026-05-01;Bisou Salé;-39.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;88
+2026-05-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;89
+2026-05-01;Boulangerie;-6.0;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;90
+2026-05-01;Remboursement Ael;-63.79;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;91
+2026-05-01;Leclerc;-42.45;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;92
+2026-05-01;Boulangerie;-7.3;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;93
+2026-05-01;Leroy MErlin;-29.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mai 2026;94
+2026-05-01;Leroy MErlin;-236.28;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mai 2026;95
+2026-05-01;Boulangerie;-11.0;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;96
+2026-05-01;Dr Apel;-30.0;Medical;depense_non_prevue;Financements.xlsx;Mai 2026;97
+2026-05-01;Leclerc;-13.73;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;98
+2026-05-01;Assurance Appart Arthur;-93.31;Charges;depense_non_prevue;Financements.xlsx;Mai 2026;99
+2026-05-01;Grain de Malice;-112.97;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;100
+2026-05-01;La Ruche;-29.5;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;101
+2026-05-01;Leclerc;-51.03;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;102
+2026-05-01;Chèque;-18.25;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;103
+2026-05-01;Café;-2.7;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;104
+2026-05-01;Café;-2.7;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;105
+2026-05-01;Survet Ael;-35.0;Vêtements;depense_non_prevue;Financements.xlsx;Mai 2026;106
+2026-05-01;Café;-1.9;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;107
+2026-05-01;Station;-16.3;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;108
+2026-05-01;Leclerc;-65.83;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;109
+2026-05-01;Carrefour Mérignac;-89.68;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;110
+2026-05-01;Pharmacie St Sulpice;-7.98;Medical;depense_non_prevue;Financements.xlsx;Mai 2026;111
+2026-05-01;Cigarettes;-27.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;112
+2026-05-01;Courses Anniversaire;-385.39;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;113
+2026-05-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;114
+2026-05-01;Courses Anniversaire;-181.13;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;115
+2026-05-01;Courses Anniversaire;-73.43;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;116
+2026-05-01;Station;-29.3;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;117
+2026-05-01;Leclerc;-17.04;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;118
+2026-05-01;Cafran;-57.0;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;119
+2026-05-01;Leclerc;-2.29;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;120
+2026-05-01;Leclerc;-0.52;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;121
+2026-05-01;Radio Lamballe;-31.5;Medical;depense_non_prevue;Financements.xlsx;Mai 2026;122
+2026-05-01;Radio Lamballe;-30.0;Medical;depense_non_prevue;Financements.xlsx;Mai 2026;123
+2026-05-01;Croquettes Oska;-47.01;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;124
+2026-05-01;Leclerc;-2.48;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;125
+2026-05-01;Mr Bricolage;-51.65;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mai 2026;126
+2026-05-01;Mr Bricolage;-7.1;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mai 2026;127
+2026-05-01;Leclerc;-9.8;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;128
+2026-05-01;Buvette Longe Cote;-7.5;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;129
+2026-05-01;Buvette Longe Cote;-3.5;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;130
+2026-05-01;Buvette Longe Cote;-5.0;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;131
+2026-05-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;132
+2026-05-01;Espèces;-11.5;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;133
+2026-05-01;Bar La Rotonde;-19.8;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;134
+2026-05-01;Amazon;-25.98;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;135
+2026-05-01;Leclerc Drive;-172.32;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;136
+2026-05-01;PayPlug;-61.84;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;137
+2026-05-01;Leclerc;-54.59;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;138
+2026-05-01;Star Metro Rennes;-3.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mai 2026;139
+2026-05-01;Leclerc;-11.95;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;140
+2026-05-01;Repas Toulouse;-25.2;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;141
+2026-05-01;PPMC;-77.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mai 2026;142
+2026-05-01;Livre Blagnac;-14.85;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;143
+2026-05-01;Amazon;-11.89;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Mai 2026;144
+2026-05-01;Cafran;-40.74;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;145
+2026-05-01;Pharmacie;-59.7;Medical;depense_non_prevue;Financements.xlsx;Mai 2026;146
+2026-05-01;Repas Toulouse;-32.1;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;147
+2026-05-01;Apero La Voile;-8.5;Loisirs;depense_non_prevue;Financements.xlsx;Mai 2026;148
+2026-05-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Mai 2026;149
+2026-05-01;Lecler;-26.32;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;150
+2026-05-01;Remboursement Elouen;-250.9;Charges;depense_non_prevue;Financements.xlsx;Mai 2026;151
+2026-05-01;Amazon;-43.34;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Mai 2026;152
+2026-05-01;Vinted;-11.04;Vêtements;depense_non_prevue;Financements.xlsx;Mai 2026;153
+2026-05-01;Vinted;-82.64;Vêtements;depense_non_prevue;Financements.xlsx;Mai 2026;154
+2026-05-01;Pharmacie;-19.3;Medical;depense_non_prevue;Financements.xlsx;Mai 2026;155
+2026-05-01;Chocolat;-25.05;Courses;depense_non_prevue;Financements.xlsx;Mai 2026;156
+2026-04-01;Salaire Pierre;6365.48;Recettes;recette;Financements.xlsx;Avril 2026;3
+2026-04-01;Salaire Sterenn;1828.73;Recettes;recette;Financements.xlsx;Avril 2026;4
+2026-04-01;CAF;113.3;Recettes;recette;Financements.xlsx;Avril 2026;5
+2026-04-01;Virement Mamou;150.0;Recettes;recette;Financements.xlsx;Avril 2026;8
+2026-04-01;Note de Frais Igienair;121.83;Recettes;recette;Financements.xlsx;Avril 2026;9
+2026-04-01;Stephanie Charrier;21.0;Recettes;recette;Financements.xlsx;Avril 2026;10
+2026-04-01;Remboursement Suravenir;2.18;Recettes;recette;Financements.xlsx;Avril 2026;11
+2026-04-01;Remboursement Suravenir;4.97;Recettes;recette;Financements.xlsx;Avril 2026;12
+2026-04-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Avril 2026;3
+2026-04-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Avril 2026;5
+2026-04-01;Argent de poche Arthur;-164.99;Charges;depense_prevue;Financements.xlsx;Avril 2026;6
+2026-04-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Avril 2026;7
+2026-04-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Avril 2026;8
+2026-04-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Avril 2026;9
+2026-04-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Avril 2026;10
+2026-04-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Avril 2026;11
+2026-04-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Avril 2026;12
+2026-04-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;13
+2026-04-01;EDF Arthur;-65.0;Charges;depense_prevue;Financements.xlsx;Avril 2026;14
+2026-04-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Avril 2026;15
+2026-04-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;16
+2026-04-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;17
+2026-04-01;Sosh Ael;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;18
+2026-04-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;20
+2026-04-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Avril 2026;21
+2026-04-01;Suravenir Habitation;-60.09;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Avril 2026;23
+2026-04-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Avril 2026;24
+2026-04-01;Suravenir Voiture;-133.7;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Avril 2026;25
+2026-04-01;Suravenir Garanties Vie;-29.97;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Avril 2026;26
+2026-04-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Avril 2026;27
+2026-04-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;28
+2026-04-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Avril 2026;30
+2026-04-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;31
+2026-04-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Avril 2026;32
+2026-04-01;St Charles;-178.3;Scolarité;depense_prevue;Financements.xlsx;Avril 2026;33
+2026-04-01;Ménage;-170.0;Logement;depense_prevue;Financements.xlsx;Avril 2026;34
+2026-04-01;Urssaaf;-78.43;Logement;depense_prevue;Financements.xlsx;Avril 2026;35
+2026-04-01;Cotisation Eurocompte;-16.85;Charges;depense_prevue;Financements.xlsx;Avril 2026;36
+2026-04-01;Indivision;-33.89;Charges;depense_prevue;Financements.xlsx;Avril 2026;37
+2026-04-01;Cafran Trégeux (Eau Igienair);-96.83;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;45
+2026-04-01;Docteur Apel;-30.0;Soins;depense_non_prevue;Financements.xlsx;Avril 2026;46
+2026-04-01;Leclerc;-252.37;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;47
+2026-04-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;48
+2026-04-01;Leclerc;-20.84;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;49
+2026-04-01;Divers;-49.0;Cadeau;depense_non_prevue;Financements.xlsx;Avril 2026;50
+2026-04-01;Divers;-75.0;Cadeau;depense_non_prevue;Financements.xlsx;Avril 2026;51
+2026-04-01;Amazon;-9.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Avril 2026;52
+2026-04-01;Intermarché Trégeux;-33.75;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;53
+2026-04-01;Atelier Saint Cast;-18.0;Cadeau;depense_non_prevue;Financements.xlsx;Avril 2026;54
+2026-04-01;Metro Rennes;-3.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;55
+2026-04-01;Gouter Rennes;-6.7;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;56
+2026-04-01;Train Pierre;-34.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;57
+2026-04-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;58
+2026-04-01;Leclerc;-6.5;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;59
+2026-04-01;Remboursement Elouen;-70.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;60
+2026-04-01;Super U Erquy;-25.6;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;61
+2026-04-01;Super U Erquy;-70.52;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;62
+2026-04-01;Mr Bricolage;-55.05;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;63
+2026-04-01;La Villa;-154.5;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;64
+2026-04-01;Leclerc;-245.57;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;65
+2026-04-01;Boulangerie;-19.05;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;66
+2026-04-01;Pharmacie;-106.64;Soins;depense_non_prevue;Financements.xlsx;Avril 2026;67
+2026-04-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;68
+2026-04-01;Chouquettes;-28.99;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;69
+2026-04-01;Mr Bricolage;-12.3;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;70
+2026-04-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;71
+2026-04-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;72
+2026-04-01;Leclerc;-33.92;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;73
+2026-04-01;Coiffeur Elouen;-85.0;Soins;depense_non_prevue;Financements.xlsx;Avril 2026;74
+2026-04-01;Remboursement Elouen;-187.9;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;75
+2026-04-01;AGIOS;-5.77;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;76
+2026-04-01;Quartaut;-30.4;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;77
+2026-04-01;Mr Bricolage;-9.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;78
+2026-04-01;Leclerc;-6.33;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;79
+2026-04-01;Leclerc;-237.92;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;80
+2026-04-01;Réparation Vélo;-90.0;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;81
+2026-04-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;82
+2026-04-01;Leclerc;-26.55;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;83
+2026-04-01;L'obele;-20.4;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;84
+2026-04-01;Carrefour Val André;-3.29;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;85
+2026-04-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;86
+2026-04-01;Leclerc;-43.39;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;87
+2026-04-01;Compagnons Saisons;-79.8;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;88
+2026-04-01;Appel;-0.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Avril 2026;89
+2026-04-01;Butagaz;-26.95;Charges;depense_non_prevue;Financements.xlsx;Avril 2026;90
+2026-04-01;Remboursement Ael;-55.55;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;91
+2026-04-01;Ordier Langueux;-36.89;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;92
+2026-04-01;Leclerc;-206.12;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;93
+2026-04-01;Leclerc;-49.44;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;94
+2026-04-01;Midi à Tregeux;-16.1;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;95
+2026-04-01;Mr Bricolage;-9.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;96
+2026-04-01;Leclerc;-65.61;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;97
+2026-04-01;Leroy Merlin;-215.73;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;98
+2026-04-01;Supplement EuroCompte;-2.18;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;99
+2026-04-01;Vinted;-19.33;Vêtements;depense_non_prevue;Financements.xlsx;Avril 2026;100
+2026-04-01;Le Redoute;-44.94;Vêtements;depense_non_prevue;Financements.xlsx;Avril 2026;101
+2026-04-01;Amazon;-19.98;Vêtements;depense_non_prevue;Financements.xlsx;Avril 2026;102
+2026-04-01;Amazon;-23.52;Vêtements;depense_non_prevue;Financements.xlsx;Avril 2026;103
+2026-04-01;Café Cesar Toulouse;-18.5;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;104
+2026-04-01;Leclerc;-83.55;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;105
+2026-04-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;106
+2026-04-01;Virement Stephanie Charrier;-21.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;107
+2026-04-01;Billard Toulouse;-21.15;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;108
+2026-04-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;109
+2026-04-01;Monde du Chocolat;-33.25;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;110
+2026-04-01;Hand Cesson;-27.5;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;111
+2026-04-01;Piment Lamballe;-119.0;Vêtements;depense_non_prevue;Financements.xlsx;Avril 2026;112
+2026-04-01;Star Metro;-1.7;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Avril 2026;113
+2026-04-01;Hand Cesson;-34.0;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;114
+2026-04-01;Leclerc;-3.9;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;115
+2026-04-01;Carrefour Val André;-6.81;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;116
+2026-04-01;Buvette Coquille;-1.0;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;117
+2026-04-01;Buvette Coquille;-4.0;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;118
+2026-04-01;La Villa;-5.0;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;119
+2026-04-01;Galettes et Fourchettes;-5.4;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;120
+2026-04-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Avril 2026;121
+2026-04-01;La Villa;-51.0;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;122
+2026-04-01;Leclerc;-27.43;Assurances/Mutuelle;depense_non_prevue;Financements.xlsx;Avril 2026;123
+2026-04-01;Truffaut;-24.99;Cadeau;depense_non_prevue;Financements.xlsx;Avril 2026;124
+2026-04-01;Leroy Merlin;-25.63;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Avril 2026;125
+2026-04-01;Café capsule;-47.84;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;126
+2026-04-01;Leclerc;-121.88;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;127
+2026-04-01;Cultura;-53.43;Loisirs;depense_non_prevue;Financements.xlsx;Avril 2026;128
+2026-04-01;Leclerc;-25.5;Courses;depense_non_prevue;Financements.xlsx;Avril 2026;129
+2026-03-01;Salaire Pierre;5258.61;Recettes;recette;Financements.xlsx;Mars 2026;3
+2026-03-01;Salaire Sterenn;1828.73;Recettes;recette;Financements.xlsx;Mars 2026;4
+2026-03-01;CAF;113.3;Recettes;recette;Financements.xlsx;Mars 2026;5
+2026-03-01;Frais Igienair;93.15;Recettes;recette;Financements.xlsx;Mars 2026;9
+2026-03-01;Mutuelle;10.5;Recettes;recette;Financements.xlsx;Mars 2026;10
+2026-03-01;Epargne Travaux;599.17;Recettes;recette;Financements.xlsx;Mars 2026;11
+2026-03-01;Remboursement Mitigeur Lidl;26.99;Recettes;recette;Financements.xlsx;Mars 2026;12
+2026-03-01;CPAM;4.0;Recettes;recette;Financements.xlsx;Mars 2026;13
+2026-03-01;Epargne Travaux;450.0;Recettes;recette;Financements.xlsx;Mars 2026;14
+2026-03-01;Edouard Padel;4.2;Recettes;recette;Financements.xlsx;Mars 2026;15
+2026-03-01;Jean Marie Raclette;15.67;Recettes;recette;Financements.xlsx;Mars 2026;16
+2026-03-01;Epargne Travaux;178.72;Recettes;recette;Financements.xlsx;Mars 2026;17
+2026-03-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Mars 2026;3
+2026-03-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Mars 2026;5
+2026-03-01;Argent de poche Arthur;-164.99;Charges;depense_prevue;Financements.xlsx;Mars 2026;6
+2026-03-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Mars 2026;7
+2026-03-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Mars 2026;8
+2026-03-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Mars 2026;9
+2026-03-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Mars 2026;10
+2026-03-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Mars 2026;11
+2026-03-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Mars 2026;12
+2026-03-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;13
+2026-03-01;EDF Arthur;-65.0;Charges;depense_prevue;Financements.xlsx;Mars 2026;14
+2026-03-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Mars 2026;15
+2026-03-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;16
+2026-03-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;17
+2026-03-01;Sosh Ael;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;18
+2026-03-01;Sosh Elouen;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;19
+2026-03-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;20
+2026-03-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mars 2026;21
+2026-03-01;Suravenir Habitation;-60.09;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mars 2026;23
+2026-03-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Mars 2026;24
+2026-03-01;Suravenir Voiture;-133.7;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mars 2026;25
+2026-03-01;Suravenir Garanties Vie;-29.97;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Mars 2026;26
+2026-03-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Mars 2026;27
+2026-03-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;28
+2026-03-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Mars 2026;30
+2026-03-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;31
+2026-03-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Mars 2026;32
+2026-03-01;St Charles;-178.3;Scolarité;depense_prevue;Financements.xlsx;Mars 2026;33
+2026-03-01;Ménage;-102.0;Logement;depense_prevue;Financements.xlsx;Mars 2026;34
+2026-03-01;Urssaaf;-104.6;Logement;depense_prevue;Financements.xlsx;Mars 2026;35
+2026-03-01;Cotisation Eurocompte;-19.03;Dépenses prévues;depense_prevue;Financements.xlsx;Mars 2026;36
+2026-03-01;Indivision;-33.89;Dépenses prévues;depense_prevue;Financements.xlsx;Mars 2026;37
+2026-03-01;Soirée Hand;-11.5;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;44
+2026-03-01;Boucherie;-21.02;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;45
+2026-03-01;Leclerc;-205.56;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;46
+2026-03-01;Mr Bricolage;-209.7;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;47
+2026-03-01;Pharmacie;-28.65;Medical;depense_non_prevue;Financements.xlsx;Mars 2026;48
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;49
+2026-03-01;ChargeMap;-115.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;50
+2026-03-01;Cireuse qui ne marche pas Amazon;-105.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;51
+2026-03-01;Leclerc;-5.18;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;52
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;53
+2026-03-01;Lavage Voiture;-14.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;54
+2026-03-01;Pharmacie;-3.46;Medical;depense_non_prevue;Financements.xlsx;Mars 2026;55
+2026-03-01;Pharmacie;-67.28;Medical;depense_non_prevue;Financements.xlsx;Mars 2026;56
+2026-03-01;Metro Rennes;-3.4;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;57
+2026-03-01;Café Cap;-0.5;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;58
+2026-03-01;Café Cap;-0.5;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;59
+2026-03-01;Café Cap;-0.5;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;60
+2026-03-01;Metro Rennes;-3.5;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;61
+2026-03-01;Librairie Lamballe;-9.2;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;62
+2026-03-01;Train Cesson;-34.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;63
+2026-03-01;Chocolats;-43.42;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;64
+2026-03-01;Carré Gourmand;-12.55;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;65
+2026-03-01;Leclerc;-3.49;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;66
+2026-03-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;67
+2026-03-01;Leclerc;-33.92;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;68
+2026-03-01;CEWE Langueux;-2.73;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;69
+2026-03-01;Feuillette Boulangerie;-6.6;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;70
+2026-03-01;Leroy Merlin;-26.4;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;71
+2026-03-01;Lidl Saint Alban;-55.09;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;72
+2026-03-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;73
+2026-03-01;Brico Dépot;-159.9;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;74
+2026-03-01;Boulangerie;-7.45;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;75
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;76
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;77
+2026-03-01;Leclerc Drive;-130.44;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;78
+2026-03-01;Amende;-45.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;79
+2026-03-01;L'obele;-17.95;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;80
+2026-03-01;Leclerc;-36.18;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;81
+2026-03-01;Leclerc;-48.47;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;82
+2026-03-01;Tartapain;-10.91;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;83
+2026-03-01;Boucherie;-25.82;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;84
+2026-03-01;Vinted;-29.83;Vêtements;depense_non_prevue;Financements.xlsx;Mars 2026;85
+2026-03-01;Vinted;-57.59;Vêtements;depense_non_prevue;Financements.xlsx;Mars 2026;86
+2026-03-01;Decathlon Elouen;-118.0;Cadeau;depense_non_prevue;Financements.xlsx;Mars 2026;87
+2026-03-01;Joom;-140.0;Vêtements;depense_non_prevue;Financements.xlsx;Mars 2026;88
+2026-03-01;Studocu;-41.88;Scolarité;depense_non_prevue;Financements.xlsx;Mars 2026;89
+2026-03-01;Ouest Pathologie;-23.1;Soins;depense_non_prevue;Financements.xlsx;Mars 2026;90
+2026-03-01;Fariault Lamballe;-12.0;Vêtements;depense_non_prevue;Financements.xlsx;Mars 2026;91
+2026-03-01;Bières Hand;-4.0;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;92
+2026-03-01;Fleurs;-26.8;Cadeau;depense_non_prevue;Financements.xlsx;Mars 2026;93
+2026-03-01;Vinted;-35.48;Vêtements;depense_non_prevue;Financements.xlsx;Mars 2026;94
+2026-03-01;Pharmacie;-78.9;Medical;depense_non_prevue;Financements.xlsx;Mars 2026;95
+2026-03-01;Boulangerie;-6.97;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;96
+2026-03-01;Leroy Merlin;-202.71;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;97
+2026-03-01;Train;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;98
+2026-03-01;Train;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;99
+2026-03-01;Leclerc;-14.28;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;100
+2026-03-01;Apple;-0.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Mars 2026;101
+2026-03-01;Leclerc;-32.71;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;102
+2026-03-01;La ruche;-10.5;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;103
+2026-03-01;FDJ;-25.0;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;104
+2026-03-01;Leclerc Drive;-45.42;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;105
+2026-03-01;Fournil;-7.88;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;106
+2026-03-01;Leclerc;-17.5;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;107
+2026-03-01;Leclerc;-28.37;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;108
+2026-03-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;109
+2026-03-01;Mr Bricolage;-13.65;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;110
+2026-03-01;Autoroute;-68.6;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;111
+2026-03-01;Leclerc;-11.52;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;112
+2026-03-01;Retrait;-100.0;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;113
+2026-03-01;Leclerc;-109.75;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;114
+2026-03-01;Mr Bricolage;-3.76;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;115
+2026-03-01;Fournil;-4.9;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;116
+2026-03-01;Leroy Merlin;-234.96;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;117
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;118
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;119
+2026-03-01;Croquettes Oska;-47.01;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;120
+2026-03-01;Cidrerie;-58.8;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;121
+2026-03-01;Boulangerie;-26.7;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;122
+2026-03-01;Leclerc;-50.24;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;123
+2026-03-01;Boulangerie;-28.2;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;124
+2026-03-01;Leroy Merlin;-31.74;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Mars 2026;125
+2026-03-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;126
+2026-03-01;Bevan;-264.0;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;127
+2026-03-01;Cultura;-71.44;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;128
+2026-03-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Mars 2026;129
+2026-03-01;Bijouterie Paimpol;-39.0;Cadeau;depense_non_prevue;Financements.xlsx;Mars 2026;130
+2026-03-01;VEterinaire;-53.6;Charges;depense_non_prevue;Financements.xlsx;Mars 2026;131
+2026-03-01;Carrefour;-41.92;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;132
+2026-03-01;PAdel;-19.9;Loisirs;depense_non_prevue;Financements.xlsx;Mars 2026;133
+2026-03-01;Fournil du port;-7.28;Courses;depense_non_prevue;Financements.xlsx;Mars 2026;134
+2026-03-01;Apple Arthur;-8.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Mars 2026;135
+2026-03-01;Amende stationnement (Igienair);-25.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Mars 2026;136
+2026-02-01;Salaire Pierre;5245.11;Recettes;recette;Financements.xlsx;Fevrier 2026;3
+2026-02-01;Salaire Sterenn;1828.73;Recettes;recette;Financements.xlsx;Fevrier 2026;4
+2026-02-01;CAF;113.3;Recettes;recette;Financements.xlsx;Fevrier 2026;5
+2026-02-01;CPAM;19.0;Recettes;recette;Financements.xlsx;Fevrier 2026;8
+2026-02-01;Note de Frais;72.32;Recettes;recette;Financements.xlsx;Fevrier 2026;9
+2026-02-01;Titouan;16.0;Recettes;recette;Financements.xlsx;Fevrier 2026;10
+2026-02-01;Mateo;16.0;Recettes;recette;Financements.xlsx;Fevrier 2026;11
+2026-02-01;Aurel;16.0;Recettes;recette;Financements.xlsx;Fevrier 2026;12
+2026-02-01;Sandrine;16.0;Recettes;recette;Financements.xlsx;Fevrier 2026;13
+2026-02-01;Fred;15.67;Recettes;recette;Financements.xlsx;Fevrier 2026;14
+2026-02-01;Edouard;15.67;Recettes;recette;Financements.xlsx;Fevrier 2026;15
+2026-02-01;Sebastien;16.0;Recettes;recette;Financements.xlsx;Fevrier 2026;16
+2026-02-01;Mutuelle;9.0;Recettes;recette;Financements.xlsx;Fevrier 2026;17
+2026-02-01;Telephone Ael;85.0;Recettes;recette;Financements.xlsx;Fevrier 2026;18
+2026-02-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;3
+2026-02-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Fevrier 2026;5
+2026-02-01;Argent de poche Arthur;-164.99;Charges;depense_prevue;Financements.xlsx;Fevrier 2026;6
+2026-02-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;7
+2026-02-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;8
+2026-02-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;9
+2026-02-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;10
+2026-02-01;Assurances prêt;-79.98;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;11
+2026-02-01;Assurances prêt;-28.49;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;12
+2026-02-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;13
+2026-02-01;EDF Arthur;-43.96;Charges;depense_prevue;Financements.xlsx;Fevrier 2026;14
+2026-02-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Fevrier 2026;15
+2026-02-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;16
+2026-02-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;17
+2026-02-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;20
+2026-02-01;Mutuelle;-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Fevrier 2026;21
+2026-02-01;Suravenir Habitation;-60.09;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Fevrier 2026;23
+2026-02-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Fevrier 2026;24
+2026-02-01;Suravenir Voiture;-133.7;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Fevrier 2026;25
+2026-02-01;Suravenir Garanties Vie;-29.97;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Fevrier 2026;26
+2026-02-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Fevrier 2026;27
+2026-02-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;28
+2026-02-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Fevrier 2026;30
+2026-02-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;31
+2026-02-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Fevrier 2026;32
+2026-02-01;St Charles;-172.1;Scolarité;depense_prevue;Financements.xlsx;Fevrier 2026;33
+2026-02-01;Urssaaf;-104.66;Logement;depense_prevue;Financements.xlsx;Fevrier 2026;35
+2026-02-01;Cotisation Eurocompte;-19.03;Dépenses prévues;depense_prevue;Financements.xlsx;Fevrier 2026;36
+2026-02-01;Indivision;-33.89;Dépenses prévues;depense_prevue;Financements.xlsx;Fevrier 2026;37
+2026-02-01;Fournil du port;-7.55;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;44
+2026-02-01;Tartapain;-18.1;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;45
+2026-02-01;Pharmacie;-28.08;Medical;depense_non_prevue;Financements.xlsx;Fevrier 2026;46
+2026-02-01;Boucherie;-40.02;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;47
+2026-02-01;La Voile;-93.5;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;48
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;49
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;50
+2026-02-01;Leclerc;-19.08;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;51
+2026-02-01;Leclerc;-37.79;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;52
+2026-02-01;Tartapain;-7.12;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;54
+2026-02-01;Dr Apel;-30.0;Medical;depense_non_prevue;Financements.xlsx;Fevrier 2026;55
+2026-02-01;Assurance Appart Arthur;-74.13;Charges;depense_non_prevue;Financements.xlsx;Fevrier 2026;56
+2026-02-01;Burger King Cesson;-58.25;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;57
+2026-02-01;Hand Cesson Paris Avril;-80.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;58
+2026-02-01;Cesson Buvette;-14.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;59
+2026-02-01;La Fabrique Ploufragan;-13.0;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;60
+2026-02-01;Leclerc;-29.82;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;61
+2026-02-01;La Toupie;-19.99;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;62
+2026-02-01;Cremerie Raclette;-85.87;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;63
+2026-02-01;Leclerc;-40.83;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;64
+2026-02-01;Leclerc;-77.77;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;65
+2026-02-01;Super U;-59.47;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;66
+2026-02-01;Butagaz;-26.95;Charges;depense_non_prevue;Financements.xlsx;Fevrier 2026;67
+2026-02-01;Leclerc;-30.39;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;68
+2026-02-01;Leclerc Drive;-156.65;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;69
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;70
+2026-02-01;Mr Bricolage;-10.85;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Fevrier 2026;71
+2026-02-01;PArking Les Champs;-3.5;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;72
+2026-02-01;JML Bretagne;-24.2;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;73
+2026-02-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;74
+2026-02-01;Carrefour;-7.22;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;75
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;76
+2026-02-01;Mr Bricolage;-10.17;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Fevrier 2026;77
+2026-02-01;Leclerc;-32.44;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;78
+2026-02-01;Truffaut;-23.98;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;79
+2026-02-01;Leclerc;-26.21;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;80
+2026-02-01;FDJ;-25.0;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;81
+2026-02-01;Leclerc;-31.9;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;82
+2026-02-01;Librairie Renard;-20.9;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;83
+2026-02-01;Bagues Paimpol;-240.0;Cadeau;depense_non_prevue;Financements.xlsx;Fevrier 2026;84
+2026-02-01;Restaurant le Lipous;-107.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;85
+2026-02-01;Intersport;-184.95;Vêtements;depense_non_prevue;Financements.xlsx;Fevrier 2026;86
+2026-02-01;Maison de santé Paimpol;-16.9;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;87
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;88
+2026-02-01;Librairie Renard;-17.6;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;89
+2026-02-01;Pizza Piampol;-48.5;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;90
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;91
+2026-02-01;Apple;-0.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Fevrier 2026;92
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;93
+2026-02-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;94
+2026-02-01;Leclerc;-84.89;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;95
+2026-02-01;Leclerc;-48.93;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;96
+2026-02-01;Otarie LongeCôte;-30.0;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;97
+2026-02-01;Biscuiterie;-50.0;Cadeau;depense_non_prevue;Financements.xlsx;Fevrier 2026;98
+2026-02-01;Café Station;-2.0;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;99
+2026-02-01;Auchan Merignac;-22.19;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;100
+2026-02-01;Leclerc Bruges;-71.82;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;101
+2026-02-01;Station Brouzils;-29.34;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;102
+2026-02-01;SoBio Merignac;-49.47;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;103
+2026-02-01;Pharmacie Accoceberry;-59.7;Medical;depense_non_prevue;Financements.xlsx;Fevrier 2026;104
+2026-02-01;Carrefour Merignac;-204.59;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;105
+2026-02-01;Galettes et Fourchettes;-21.6;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;106
+2026-02-01;Leroy Merignac;-62.47;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Fevrier 2026;107
+2026-02-01;Avia Café;-1.9;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;108
+2026-02-01;Avia Café;-2.7;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;109
+2026-02-01;Avia Sandwich;-31.2;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;110
+2026-02-01;Cafran Bio Trégeux;-93.15;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;111
+2026-02-01;Cigarettes;-13.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;112
+2026-02-01;Leclerc;-4.99;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;113
+2026-02-01;Mr Bricolage;-34.8;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Fevrier 2026;114
+2026-02-01;Arthur Divers;-100.0;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;115
+2026-02-01;Hotel Paris;-122.3;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;116
+2026-02-01;Labenne Chaussures;-45.0;Vêtements;depense_non_prevue;Financements.xlsx;Fevrier 2026;117
+2026-02-01;Navigo;-5.1;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;118
+2026-02-01;Navigo;-10.2;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Fevrier 2026;119
+2026-02-01;Boulangerie Paris;-14.5;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;120
+2026-02-01;Bieres Bercy;-20.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;121
+2026-02-01;Bieres Bercy;-20.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;122
+2026-02-01;Mercure Apero;-16.5;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;123
+2026-02-01;Produits Coiffeur;-19.0;Soins;depense_non_prevue;Financements.xlsx;Fevrier 2026;124
+2026-02-01;Kiko Milano;-43.46;Soins;depense_non_prevue;Financements.xlsx;Fevrier 2026;125
+2026-02-01;Quai 16;-8.4;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;126
+2026-02-01;Palais des Thés;-17.4;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;127
+2026-02-01;BoPain Paris Sandwichs;-29.5;Courses;depense_non_prevue;Financements.xlsx;Fevrier 2026;128
+2026-02-01;Hachoir manuel;-42.9;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;129
+2026-02-01;Telephone Ael;-85.0;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Fevrier 2026;130
+2026-02-01;Fines Gueules;-8.5;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;131
+2026-02-01;La Voile;-82.0;Loisirs;depense_non_prevue;Financements.xlsx;Fevrier 2026;132
+2026-02-01;Veterinaire;-150.5;Divers;depense_non_prevue;Financements.xlsx;Fevrier 2026;133
+2026-01-01;Salaire Pierre;5441.88;Recettes;recette;Financements.xlsx;Janvier 2026;3
+2026-01-01;Salaire Sterenn;1938.46;Recettes;recette;Financements.xlsx;Janvier 2026;4
+2026-01-01;CAF;113.3;Recettes;recette;Financements.xlsx;Janvier 2026;5
+2026-01-01;CPAM;21.0;Recettes;recette;Financements.xlsx;Janvier 2026;8
+2026-01-01;Regularisation Engie;509.85;Recettes;recette;Financements.xlsx;Janvier 2026;9
+2026-01-01;Crédit Impots;449.0;Recettes;recette;Financements.xlsx;Janvier 2026;10
+2026-01-01;Epargne Travaux;328.24;Recettes;recette;Financements.xlsx;Janvier 2026;11
+2026-01-01;Ael Telephone;576.99;Recettes;recette;Financements.xlsx;Janvier 2026;12
+2026-01-01;Ael Coque;51.59;Recettes;recette;Financements.xlsx;Janvier 2026;13
+2026-01-01;CPAM;26.15;Recettes;recette;Financements.xlsx;Janvier 2026;14
+2026-01-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Janvier 2026;3
+2026-01-01;Argent de poche Elouen;-200.0;Charges;depense_prevue;Financements.xlsx;Janvier 2026;4
+2026-01-01;Engie Elouen;-70.0;Charges;depense_prevue;Financements.xlsx;Janvier 2026;5
+2026-01-01;Argent de poche Arthur;-164.99;Charges;depense_prevue;Financements.xlsx;Janvier 2026;6
+2026-01-01;Prêt 25;-995.15;Logement;depense_prevue;Financements.xlsx;Janvier 2026;7
+2026-01-01;Prêt 15;-883.42;Logement;depense_prevue;Financements.xlsx;Janvier 2026;8
+2026-01-01;Assurances prêt;-11.46;Logement;depense_prevue;Financements.xlsx;Janvier 2026;9
+2026-01-01;Assurances prêt;-32.57;Logement;depense_prevue;Financements.xlsx;Janvier 2026;10
+2026-01-01;Assurances prêt;-84.98;Logement;depense_prevue;Financements.xlsx;Janvier 2026;11
+2026-01-01;Assurances prêt;-33.49;Logement;depense_prevue;Financements.xlsx;Janvier 2026;12
+2026-01-01;Disney;-6.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;13
+2026-01-01;EDF Arthur;-43.96;Charges;depense_prevue;Financements.xlsx;Janvier 2026;14
+2026-01-01;EkWateur;-208.0;Charges;depense_prevue;Financements.xlsx;Janvier 2026;15
+2026-01-01;Sosh Maison;-24.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;16
+2026-01-01;Sosh Arthur;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;17
+2026-01-01;Sosh Ael;-14.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;18
+2026-01-01;Sosh Sterenn;-10.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;20
+2026-01-01;Mutuelle (Vivinter);-104.98;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Janvier 2026;22
+2026-01-01;Suravenir Habitation;-53.22;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Janvier 2026;23
+2026-01-01;VW LDD;-331.65;Voiture/Déplacement;depense_prevue;Financements.xlsx;Janvier 2026;24
+2026-01-01;Suravenir Voiture;-94.22;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Janvier 2026;25
+2026-01-01;Suravenir Garanties Vie;-28.58;Assurances/Mutuelle;depense_prevue;Financements.xlsx;Janvier 2026;26
+2026-01-01;Joséphine;-20.0;Divers;depense_prevue;Financements.xlsx;Janvier 2026;27
+2026-01-01;Canal Plus;-21.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;28
+2026-01-01;Keolis Elouen;-21.4;Voiture/Déplacement;depense_prevue;Financements.xlsx;Janvier 2026;30
+2026-01-01;Apple;-0.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;31
+2026-01-01;Apple;-16.99;Internet/Téléphone;depense_prevue;Financements.xlsx;Janvier 2026;32
+2026-01-01;St Charles;-178.3;Scolarité;depense_prevue;Financements.xlsx;Janvier 2026;33
+2026-01-01;Ménage;-136.0;Logement;depense_prevue;Financements.xlsx;Janvier 2026;34
+2026-01-01;Urssaaf;-52.34;Logement;depense_prevue;Financements.xlsx;Janvier 2026;35
+2026-01-01;Cotisation Eurocompte;-19.03;Dépenses prévues;depense_prevue;Financements.xlsx;Janvier 2026;36
+2026-01-01;Indivision;-33.89;Dépenses prévues;depense_prevue;Financements.xlsx;Janvier 2026;37
+2026-01-01;Fournil du port;-7.35;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;44
+2026-01-01;Leclerc;-15.65;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;45
+2026-01-01;Leclerc;-39.06;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;46
+2026-01-01;Le Quartaut Jeff;-45.0;Cadeau;depense_non_prevue;Financements.xlsx;Janvier 2026;47
+2026-01-01;Pharmacie;-71.4;Medical;depense_non_prevue;Financements.xlsx;Janvier 2026;48
+2026-01-01;Charge Voiture;-11.76;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;49
+2026-01-01;BioCoop;-45.58;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;50
+2026-01-01;Feuillate Repas Galette;-53.2;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;51
+2026-01-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Janvier 2026;52
+2026-01-01;Cultura;-5.97;Loisirs;depense_non_prevue;Financements.xlsx;Janvier 2026;53
+2026-01-01;Leclerc;-34.01;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;54
+2026-01-01;ChargeMap;-105.7;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;55
+2026-01-01;Courses Arthur;-26.82;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;56
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;57
+2026-01-01;Dr Apel;-60.0;Medical;depense_non_prevue;Financements.xlsx;Janvier 2026;58
+2026-01-01;Super U;-8.94;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;59
+2026-01-01;Leclerc;-138.76;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;60
+2026-01-01;Leclerc;-15.72;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;61
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;62
+2026-01-01;Leclerc;-70.61;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;63
+2026-01-01;Cafran Tregeux;-72.32;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;64
+2026-01-01;MaxiCoffee;-47.84;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;65
+2026-01-01;Café Ploeuc;-1.0;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;66
+2026-01-01;Café Ploeuc;-3.0;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;67
+2026-01-01;Super U;-102.95;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;68
+2026-01-01;Pharmacie;-29.75;Medical;depense_non_prevue;Financements.xlsx;Janvier 2026;69
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;70
+2026-01-01;Leroy Merlin;-420.09;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;71
+2026-01-01;Frais Bancaire;-6.01;Divers;depense_non_prevue;Financements.xlsx;Janvier 2026;72
+2026-01-01;Engie;-509.85;Charges;depense_non_prevue;Financements.xlsx;Janvier 2026;73
+2026-01-01;Mr Bricolage;-6.95;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;74
+2026-01-01;Leclerc;-9.78;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;75
+2026-01-01;Leclerc;-30.85;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;76
+2026-01-01;Autoroute;-66.6;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;77
+2026-01-01;Amazon;-9.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Janvier 2026;78
+2026-01-01;Cigarettes;-13.0;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;79
+2026-01-01;Mr Bricolage;-59.22;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;80
+2026-01-01;Montre Ael;-279.0;Cadeau;depense_non_prevue;Financements.xlsx;Janvier 2026;81
+2026-01-01;Apple;-0.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Janvier 2026;82
+2026-01-01;Leclerc;-48.41;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;83
+2026-01-01;Nems;-48.5;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;84
+2026-01-01;Fournil du port;-8.53;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;85
+2026-01-01;Monde du Chocolat;-50.55;Cadeau;depense_non_prevue;Financements.xlsx;Janvier 2026;86
+2026-01-01;Vogue;-85.0;Vêtements;depense_non_prevue;Financements.xlsx;Janvier 2026;87
+2026-01-01;Pharmacie;-130.55;Medical;depense_non_prevue;Financements.xlsx;Janvier 2026;88
+2026-01-01;Cave Gourmande;-94.8;Cadeau;depense_non_prevue;Financements.xlsx;Janvier 2026;89
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;90
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;91
+2026-01-01;Leclerc;-85.38;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;92
+2026-01-01;Leclerc;-26.29;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;93
+2026-01-01;Croquettes Oska;-47.01;Divers;depense_non_prevue;Financements.xlsx;Janvier 2026;94
+2026-01-01;Pot Bains;-19.2;Loisirs;depense_non_prevue;Financements.xlsx;Janvier 2026;95
+2026-01-01;Virement Elouen;-120.0;Charges;depense_non_prevue;Financements.xlsx;Janvier 2026;96
+2026-01-01;Leclerc;-4.68;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;97
+2026-01-01;Leroy Merlin;-45.98;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;98
+2026-01-01;Leroy Merlin;-106.39;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;99
+2026-01-01;Leclerc;-25.01;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;100
+2026-01-01;4 Murs;-49.85;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;101
+2026-01-01;4 Murs;-59.85;Bricolage/Travaux;depense_non_prevue;Financements.xlsx;Janvier 2026;102
+2026-01-01;BackMarket Ael;-576.99;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Janvier 2026;103
+2026-01-01;Tartapain;-18.35;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;104
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;105
+2026-01-01;Rhinoshield;-51.59;Internet/Téléphone;depense_non_prevue;Financements.xlsx;Janvier 2026;106
+2026-01-01;Train Arthur;-9.0;Voiture/Déplacement;depense_non_prevue;Financements.xlsx;Janvier 2026;107
+2026-01-01;Dr Thebaud;-50.0;Medical;depense_non_prevue;Financements.xlsx;Janvier 2026;108
+2026-01-01;Photos;-0.7;Divers;depense_non_prevue;Financements.xlsx;Janvier 2026;109
+2026-01-01;Photos;-3.5;Divers;depense_non_prevue;Financements.xlsx;Janvier 2026;110
+2026-01-01;Repas Club Hand;-28.0;Loisirs;depense_non_prevue;Financements.xlsx;Janvier 2026;111
+2026-01-01;Repas Club Hand;-56.0;Loisirs;depense_non_prevue;Financements.xlsx;Janvier 2026;112
+2026-01-01;Lunettes;-140.0;Medical;depense_non_prevue;Financements.xlsx;Janvier 2026;113
+2026-01-01;Leclerc;-21.47;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;114
+2026-01-01;Leclerc;-7.14;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;115
+2026-01-01;Cigarettes;-13.0;Divers;depense_non_prevue;Financements.xlsx;Janvier 2026;116
+2026-01-01;Leclerc;-41.34;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;117
+2026-01-01;Leclerc;-42.92;Courses;depense_non_prevue;Financements.xlsx;Janvier 2026;118
+2026-01-01;Virement Elouen;-315.4;Charges;depense_non_prevue;Financements.xlsx;Janvier 2026;119

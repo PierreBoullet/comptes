@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suivi des comptes</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Analyse locale</p>
+          <h1>Suivi des comptes</h1>
+        </div>
+        <button id="reload-data" type="button">Actualiser les CSV</button>
+      </section>
+
+      <section class="toolbar" aria-label="Filtres">
+        <label>
+          Mois
+          <select id="month-filter">
+            <option value="all">Tous</option>
+          </select>
+        </label>
+        <label>
+          Catégorie
+          <select id="category-filter">
+            <option value="all">Toutes</option>
+          </select>
+        </label>
+        <label>
+          Recherche
+          <input id="search-filter" type="search" placeholder="Libellé" />
+        </label>
+        <button id="export-csv" type="button">Exporter les opérations classées</button>
+      </section>
+
+      <section class="summary" aria-label="Synthèse">
+        <article>
+          <span>Recettes</span>
+          <strong id="income-total">0 €</strong>
+        </article>
+        <article>
+          <span>Dépenses</span>
+          <strong id="expense-total">0 €</strong>
+        </article>
+        <article>
+          <span>Solde</span>
+          <strong id="balance-total">0 €</strong>
+        </article>
+        <article>
+          <span>Opérations</span>
+          <strong id="transaction-count">0</strong>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel repartition-panel">
+          <div class="panel-heading">
+            <h2>Répartition des dépenses</h2>
+            <span id="category-count">0 catégories</span>
+          </div>
+          <div class="repartition">
+            <div id="donut" class="donut" aria-label="Répartition des dépenses"></div>
+            <div id="category-list" class="category-list"></div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <h2>Evolution mensuelle</h2>
+            <span>Dépenses et recettes</span>
+          </div>
+          <div id="monthly-chart" class="monthly-chart"></div>
+        </article>
+      </section>
+
+      <section class="panel operations-panel">
+        <div class="panel-heading">
+          <h2>Opérations</h2>
+          <span id="import-status">Aucun fichier importé</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Libellé</th>
+                <th>Catégorie</th>
+                <th>Source</th>
+                <th class="amount-cell">Montant</th>
+              </tr>
+            </thead>
+            <tbody id="transaction-table">
+              <tr>
+                <td colspan="5" class="empty-state">Place des fichiers CSV dans le répertoire data, puis lance le serveur local.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

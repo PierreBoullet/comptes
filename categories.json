@@ -1,0 +1,9 @@
+[
+  { "match": ["leclerc", "lidl", "carrefour", "intermarche", "cafran"], "category": "Courses" },
+  { "match": ["edf", "engie", "ekwateur", "sosh", "orange", "free", "ovh"], "category": "Charges" },
+  { "match": ["essence", "total", "parking", "sncf", "peage"], "category": "Voiture/Déplacement" },
+  { "match": ["pharmacie", "medecin", "docteur", "hopital"], "category": "Medical" },
+  { "match": ["vinted", "kiabi", "decathlon"], "category": "Vêtements" },
+  { "match": ["amazon", "cultura", "cinema", "netflix", "disney"], "category": "Loisirs" },
+  { "match": ["leroy merlin", "brico", "castorama"], "category": "Bricolage/Travaux" }
+]
