@@ -179,7 +179,7 @@ select {
 }
 
 .donut {
-  cursor: default;
+  cursor: pointer;
 }
 
 .donut::after {

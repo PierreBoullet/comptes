@@ -74,8 +74,6 @@ function parseCsv(text) {
       current = "";
     } else {
       current += char;
-    const iso = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
-    if (iso) return new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]));
     }
   }
 
@@ -106,6 +104,8 @@ function parseAmount(value) {
 
 function parseDate(value) {
   const text = String(value || "").trim();
+  const iso = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if (iso) return new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]));
   const french = text.match(/^(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2,4})$/);
   if (french) {
     const year = Number(french[3].length === 2 ? `20${french[3]}` : french[3]);
@@ -393,6 +393,13 @@ elements.donut.addEventListener("mousemove", (event) => {
   showFloatingTooltip(`${segment.category}: ${formatCurrency(segment.amount)} (${segment.percent}%)`, event);
 });
 elements.donut.addEventListener("mouseleave", hideFloatingTooltip);
+elements.donut.addEventListener("click", (event) => {
+  const segment = segmentFromDonutEvent(event);
+  if (!segment) return;
+  elements.category.value = segment.category;
+  applyFilters();
+  hideFloatingTooltip();
+});
 elements.month.addEventListener("change", applyFilters);
 elements.category.addEventListener("change", applyFilters);
 elements.search.addEventListener("input", applyFilters);
