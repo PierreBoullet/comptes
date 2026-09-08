@@ -1,6 +1,6 @@
 ﻿Date;Libellé;Montant;Catégorie;Type;Source;Feuille;Ligne
-2026-09-01;Salaire Pierre;5226.16;Recettes;recette;Financements.xlsx;Septembre 2026;3
-2026-09-01;Salaire Sterenn;2086.77;Recettes;recette;Financements.xlsx;Septembre 2026;4
+2026-09-01;Salaire Pierre;5226.16;Salaires;recette;Financements.xlsx;Septembre 2026;3
+2026-09-01;Salaire Sterenn;2086.77;Salaires;recette;Financements.xlsx;Septembre 2026;4
 2026-09-01;Note de frais Igienair;160.89;Recettes;recette;Financements.xlsx;Septembre 2026;8
 2026-09-01;Remboursement Padel Edouard;4.0;Recettes;recette;Financements.xlsx;Septembre 2026;9
 2026-09-01;Loyer Elouen;-669.7;Logement;depense_prevue;Financements.xlsx;Septembre 2026;3

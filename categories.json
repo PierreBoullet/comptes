@@ -1,9 +1,13 @@
 [
-  { "match": ["leclerc", "lidl", "carrefour", "intermarche", "cafran"], "category": "Courses" },
-  { "match": ["edf", "engie", "ekwateur", "sosh", "orange", "free", "ovh"], "category": "Charges" },
-  { "match": ["essence", "total", "parking", "sncf", "peage"], "category": "Voiture/Déplacement" },
-  { "match": ["pharmacie", "medecin", "docteur", "hopital"], "category": "Medical" },
-  { "match": ["vinted", "kiabi", "decathlon"], "category": "Vêtements" },
-  { "match": ["amazon", "cultura", "cinema", "netflix", "disney"], "category": "Loisirs" },
-  { "match": ["leroy merlin", "brico", "castorama"], "category": "Bricolage/Travaux" }
+  { "match": ["leclerc", "lidl", "carrefour", "intermarche", "cafran", "soredis"], "category": "Courses", "type": "Dépenses" },
+  { "match": ["edf", "engie", "ekwateur"], "category": "Charges", "type": "Dépenses" },
+  { "match": ["sosh", "orange", "free", "ovh"], "category": "Internet/Téléphone", "type": "Dépenses" },
+  { "match": ["essence", "total", "parking", "sncf", "peage", "keolis", "vw bank"], "category": "Voiture/Déplacement", "type": "Dépenses" },
+  { "match": ["pharmacie", "medecin", "docteur", "hopital"], "category": "Medical", "type": "Dépenses" },
+  { "match": ["vinted", "kiabi", "decathlon"], "category": "Vêtements", "type": "Dépenses" },
+  { "match": ["amazon", "cultura", "cinema", "netflix", "disney"], "category": "Loisirs", "type": "Dépenses" },
+  { "match": ["leroy merlin", "brico", "castorama"], "category": "Bricolage/Travaux", "type": "Dépenses" },
+  { "match": ["axa assurances"], "category": "Logement", "type": "Dépenses" },
+  { "match": ["salaire", "remuneration", "paie", "employeur"], "category": "Salaires", "type": "Recettes" },
+  { "match": ["caf", "allocation", "allocations", "prestations familiales"], "category": "Allocations", "type": "Recettes" }
 ]

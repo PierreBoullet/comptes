@@ -1,19 +1,11 @@
-const categoryRules = [
-  { match: ["leclerc", "lidl", "carrefour", "intermarche", "cafran"], category: "Courses" },
-  { match: ["edf", "engie", "ekwateur", "sosh", "orange", "free", "ovh"], category: "Charges" },
-  { match: ["essence", "total", "parking", "sncf", "peage"], category: "Voiture/Déplacement" },
-  { match: ["pharmacie", "medecin", "docteur", "hopital"], category: "Medical" },
-  { match: ["vinted", "kiabi", "decathlon"], category: "Vêtements" },
-  { match: ["amazon", "cultura", "cinema", "netflix", "disney"], category: "Loisirs" },
-  { match: ["leroy merlin", "brico", "castorama"], category: "Bricolage/Travaux" },
-];
-
 const colors = ["#0f766e", "#b45309", "#1d4ed8", "#be123c", "#6d5f13", "#047857", "#9333ea", "#475569", "#c2410c"];
+const initialBalance = -951.4;
 
 const state = {
   transactions: [],
   filtered: [],
   categorySegments: [],
+  categoryRules: [],
 };
 
 const elements = {
@@ -25,6 +17,7 @@ const elements = {
   income: document.querySelector("#income-total"),
   expense: document.querySelector("#expense-total"),
   balance: document.querySelector("#balance-total"),
+  heroBalance: document.querySelector("#hero-balance-total"),
   count: document.querySelector("#transaction-count"),
   categoryCount: document.querySelector("#category-count"),
   donut: document.querySelector("#donut"),
@@ -124,8 +117,14 @@ function findHeader(headers, aliases) {
 
 function categoryFor(label) {
   const normalizedLabel = normalize(label);
-  const rule = categoryRules.find((entry) => entry.match.some((needle) => normalizedLabel.includes(normalize(needle))));
+  const rule = state.categoryRules.find((entry) => entry.match.some((needle) => normalizedLabel.includes(normalize(needle))));
   return rule ? rule.category : "Divers";
+}
+
+function typeFor(label, amount) {
+  const normalizedLabel = normalize(label);
+  const rule = state.categoryRules.find((entry) => entry.match.some((needle) => normalizedLabel.includes(normalize(needle))));
+  return rule?.type || (amount >= 0 ? "Recettes" : "Dépenses");
 }
 
 function transactionsFromRows(rows, sourceName) {
@@ -142,7 +141,7 @@ function transactionsFromRows(rows, sourceName) {
     throw new Error("Colonnes attendues: Date, Libellé, Montant ou Débit/Crédit.");
   }
 
-  return rows.slice(1).map((row) => {
+  return rows.slice(1).map((row, rowIndex) => {
     const record = Object.fromEntries(headers.map((header, index) => [header, row[index] || ""]));
     const amount = amountHeader
       ? parseAmount(record[amountHeader])
@@ -155,7 +154,10 @@ function transactionsFromRows(rows, sourceName) {
       label,
       amount,
       category: categoryHeader && record[categoryHeader] ? record[categoryHeader].trim() : categoryFor(label),
+      type: typeFor(label, amount),
       source: sourceHeader && record[sourceHeader] ? record[sourceHeader].trim() : sourceName,
+      csvFile: sourceName,
+      csvRow: rowIndex + 2,
     };
   }).filter((transaction) => transaction.label && transaction.amount !== 0);
 }
@@ -163,6 +165,10 @@ function transactionsFromRows(rows, sourceName) {
 async function loadDataFiles() {
   elements.status.textContent = "Chargement des CSV du répertoire data...";
   try {
+    const categoriesResponse = await fetch("/categories.json");
+    if (!categoriesResponse.ok) throw new Error("Impossible de lire categories.json.");
+    state.categoryRules = await categoriesResponse.json();
+
     const response = await fetch("/api/csv-files");
     if (!response.ok) throw new Error("Impossible de lister le répertoire data. Lance le serveur avec python server.py.");
 
@@ -219,6 +225,47 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+function categoryOptions(selectedCategory) {
+  const categories = [...new Set([
+    ...state.categoryRules.map((rule) => rule.category),
+    ...state.transactions.map((transaction) => transaction.category),
+    selectedCategory,
+  ].filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
+
+  return categories.map((category) => {
+    const selected = category === selectedCategory ? " selected" : "";
+    return `<option value="${escapeHtml(category)}"${selected}>${escapeHtml(category)}</option>`;
+  }).join("");
+}
+
+async function saveTransactionEdit(transaction, updates) {
+  const nextLabel = updates.label ?? transaction.label;
+  const nextCategory = updates.category ?? transaction.category;
+  const previous = { label: transaction.label, category: transaction.category };
+
+  transaction.label = nextLabel;
+  transaction.category = nextCategory;
+  elements.status.textContent = "Sauvegarde de la modification...";
+
+  try {
+    const response = await fetch(`/api/csv-files/${encodeURIComponent(transaction.csvFile)}/rows/${transaction.csvRow}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ label: nextLabel, category: nextCategory }),
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || "La sauvegarde a échoué.");
+    updateFilters();
+    applyFilters();
+    elements.status.textContent = "Modification sauvegardée.";
+  } catch (error) {
+    transaction.label = previous.label;
+    transaction.category = previous.category;
+    applyFilters();
+    elements.status.textContent = error.message;
+  }
+}
+
 function applyFilters() {
   const selectedMonth = elements.month.value;
   const selectedCategory = elements.category.value;
@@ -236,20 +283,28 @@ function applyFilters() {
 
 function updateFilters() {
   const months = [...new Set(state.transactions.map((transaction) => monthKey(transaction.date)))].sort().reverse();
-  const categories = [...new Set(state.transactions.map((transaction) => transaction.category))].sort((a, b) => a.localeCompare(b, "fr"));
+  const categoriesByType = new Map([["Recettes", new Set()], ["Dépenses", new Set()]]);
+  state.transactions.forEach((transaction) => categoriesByType.get(transaction.type)?.add(transaction.category));
 
   elements.month.innerHTML = '<option value="all">Tous</option>' + months.map((key) => `<option value="${escapeHtml(key)}">${escapeHtml(monthLabel(key))}</option>`).join("");
-  elements.category.innerHTML = '<option value="all">Toutes</option>' + categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("");
+  elements.category.innerHTML = '<option value="all">Toutes</option>' + [...categoriesByType.entries()].map(([type, categories]) => {
+    const options = [...categories].sort((a, b) => a.localeCompare(b, "fr"));
+    return options.length ? `<optgroup label="${type}">${options.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}</optgroup>` : "";
+  }).join("");
 }
 
 function render() {
   const income = state.filtered.filter((transaction) => transaction.amount > 0).reduce((sum, transaction) => sum + transaction.amount, 0);
   const expense = state.filtered.filter((transaction) => transaction.amount < 0).reduce((sum, transaction) => sum + Math.abs(transaction.amount), 0);
+  const balance = income - expense;
+  const accountBalance = state.transactions.reduce((sum, transaction) => sum + transaction.amount, initialBalance);
 
   elements.income.textContent = formatCurrency(income);
   elements.expense.textContent = formatCurrency(expense);
-  elements.balance.textContent = formatCurrency(income - expense);
-  elements.balance.className = income - expense >= 0 ? "positive" : "negative";
+  elements.balance.textContent = formatCurrency(balance);
+  elements.balance.className = balance >= 0 ? "positive" : "negative";
+  elements.heroBalance.textContent = formatCurrency(accountBalance);
+  elements.heroBalance.className = accountBalance >= 0 ? "positive" : "negative";
   elements.count.textContent = String(state.filtered.length);
 
   renderCategories();
@@ -356,13 +411,21 @@ function renderMonthlyChart() {
 
 function renderTable() {
   const sorted = [...state.filtered].sort((left, right) => (right.date?.getTime() || 0) - (left.date?.getTime() || 0));
-  elements.table.innerHTML = sorted.length ? sorted.map((transaction) => `<tr>
+  elements.table.innerHTML = sorted.length ? sorted.map((transaction) => `<tr data-csv-file="${escapeHtml(transaction.csvFile)}" data-csv-row="${transaction.csvRow}">
     <td>${transaction.date ? new Intl.DateTimeFormat("fr-FR").format(transaction.date) : ""}</td>
-    <td>${escapeHtml(transaction.label)}</td>
-    <td>${escapeHtml(transaction.category)}</td>
+    <td><input class="table-edit" data-field="label" type="text" value="${escapeHtml(transaction.label)}" aria-label="Modifier le libellé" /></td>
+    <td><select class="table-edit" data-field="category" aria-label="Modifier la catégorie">${categoryOptions(transaction.category)}</select></td>
     <td>${escapeHtml(transaction.source || "")}</td>
     <td class="amount-cell ${transaction.amount >= 0 ? "positive" : "negative"}">${formatCurrency(transaction.amount)}</td>
   </tr>`).join("") : '<tr><td colspan="5" class="empty-state">Aucune opération ne correspond aux filtres.</td></tr>';
+}
+
+function transactionFromEditedControl(control) {
+  const row = control.closest("tr");
+  if (!row) return null;
+  const csvFile = row.dataset.csvFile;
+  const csvRow = Number(row.dataset.csvRow);
+  return state.transactions.find((transaction) => transaction.csvFile === csvFile && transaction.csvRow === csvRow) || null;
 }
 
 function exportCategorizedCsv() {
@@ -404,6 +467,15 @@ elements.month.addEventListener("change", applyFilters);
 elements.category.addEventListener("change", applyFilters);
 elements.search.addEventListener("input", applyFilters);
 elements.exportCsv.addEventListener("click", exportCategorizedCsv);
+elements.table.addEventListener("change", (event) => {
+  const control = event.target.closest(".table-edit");
+  if (!control) return;
+  const transaction = transactionFromEditedControl(control);
+  if (!transaction) return;
+  const value = control.value.trim();
+  if (!value || value === transaction[control.dataset.field]) return;
+  saveTransactionEdit(transaction, { [control.dataset.field]: value });
+});
 
 render();
 loadDataFiles();

@@ -45,6 +45,13 @@ select {
   margin-bottom: 20px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--accent-strong);
@@ -64,6 +71,25 @@ h1 {
   line-height: 0.95;
 }
 
+.hero-title-row {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.account-balance {
+  align-items: baseline;
+  color: var(--muted);
+  display: inline-flex;
+  gap: 8px;
+  margin: 0;
+}
+
+.account-balance strong {
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+}
+
 h2 {
   font-size: 1.05rem;
 }
@@ -77,6 +103,11 @@ button {
   font-weight: 700;
   padding: 12px 16px;
   box-shadow: 0 12px 24px rgba(15, 118, 110, 0.22);
+}
+
+button[disabled] {
+  cursor: wait;
+  opacity: 0.68;
 }
 
 .toolbar,
@@ -339,6 +370,20 @@ th {
   text-transform: uppercase;
 }
 
+.table-edit {
+  border-color: transparent;
+  background: transparent;
+  min-width: 160px;
+  padding: 7px 8px;
+}
+
+.table-edit:hover,
+.table-edit:focus {
+  border-color: var(--line);
+  background: var(--panel);
+  outline: none;
+}
+
 .amount-cell {
   text-align: right;
   white-space: nowrap;
@@ -362,6 +407,19 @@ th {
   .panel-heading {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .hero-title-row {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hero-actions {
+    justify-content: stretch;
+  }
+
+  .hero-actions button {
+    flex: 1 1 180px;
   }
 
   .toolbar,

@@ -11,11 +11,39 @@ python3 server.py
 
 Puis ouvre : <http://localhost:8765/dashboard.html>
 
-Le serveur local fournit seulement la page web et la liste des fichiers `data/*.csv`.
+Le serveur local fournit la page web, la liste des fichiers `data/*.csv` et la sauvegarde des corrections faites dans le tableau.
 
 La page accepte les exports avec des colonnes usuelles : `Date`, `Libellé`, `Montant`, ou bien `Débit` / `Crédit`. Si un CSV contient déjà `Catégorie` et `Source`, ces colonnes sont conservées.
 
-Pour ajouter de nouvelles opérations plus tard, dépose simplement les exports CSV de ta banque dans `data`, puis clique sur `Actualiser les CSV` dans la page.
+Pour ajouter de nouvelles opérations plus tard :
+
+1. Connecte-toi manuellement au site de ta banque ou à Linxo.
+2. Télécharge l'export CSV des opérations.
+3. Place le fichier CSV dans le répertoire `data`.
+4. Clique sur `Actualiser les CSV` dans la page.
+
+## Récupération manuelle du CSV
+
+Ce mode évite de stocker ou d'automatiser des identifiants bancaires. L'authentification reste faite dans le navigateur, directement auprès de la banque ou de Linxo.
+
+Le dashboard recharge tous les fichiers `*.csv` présents dans `data`. Tu peux donc conserver plusieurs exports, par exemple un fichier par mois.
+
+Formats attendus :
+
+- colonnes `Date`, `Libellé`, `Montant` ;
+- ou colonnes `Date`, `Libellé`, `Débit`, `Crédit` ;
+- colonne optionnelle `Catégorie` si tu veux conserver tes propres catégories ;
+- colonne optionnelle `Source` pour identifier l'origine du fichier.
+
+Exemple minimal :
+
+```csv
+Date;Libellé;Montant
+2026-09-01;CARTE LECLERC;-42,50
+2026-09-02;VIREMENT SALAIRE;2500,00
+```
+
+Plus de détails : [docs/import-csv-manuel.md](docs/import-csv-manuel.md).
 
 ## CSV initial depuis Excel
 
@@ -36,9 +64,12 @@ Fonctions disponibles :
 - Répartition des dépenses par catégorie.
 - Evolution mensuelle recettes/dépenses.
 - Filtres par mois, catégorie et libellé.
+- Modification du libellé et de la catégorie directement dans le tableau des opérations.
 - Export des opérations classées au format CSV.
 
-Les règles de catégorisation de la page sont dans `dashboard.js` pour les CSV bancaires qui n'ont pas déjà de colonne `Catégorie`. Les mêmes catégories sont aussi présentes dans `categories.json` pour le script d'import Excel.
+Les modifications faites dans le tableau sont sauvegardées dans le fichier CSV d'origine situé dans `data`.
+
+Les règles de catégorisation sont dans `categories.json`. Elles suivent deux niveaux : `type` (`Recettes` ou `Dépenses`), puis `category` (`Courses`, `Salaires`, etc.).
 
 ## Automatisation de Financements.xlsx
 
@@ -83,12 +114,12 @@ Le script cherche automatiquement les colonnes CSV usuelles : `Date`, `Libellé`
 
 ## Catégorisation
 
-Les règles sont dans `categories.json`. Chaque règle associe un ou plusieurs mots-clés bancaires à une catégorie du fichier.
+Les règles sont dans `categories.json`. Chaque règle associe un ou plusieurs mots-clés bancaires à un type et une catégorie.
 
 Exemple :
 
 ```json
-{ "match": ["leclerc", "lidl"], "category": "Courses" }
+{ "match": ["leclerc", "lidl"], "type": "Dépenses", "category": "Courses" }
 ```
 
 Une opération non reconnue est classée en `Divers` par défaut.
