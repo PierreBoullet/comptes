@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="hero-actions">
-          <button id="reload-data" type="button">Actualiser les CSV</button>
+          <button id="reload-data" type="button">Importer les nouveaux CSV</button>
         </div>
       </section>
 
@@ -86,10 +86,16 @@
           <h2>Opérations</h2>
           <span id="import-status">Aucun fichier importé</span>
         </div>
+        <div class="bulk-actions" aria-label="Modification groupée">
+          <span><strong id="selected-count">0</strong> sélectionnée(s)</span>
+          <select id="bulk-category" aria-label="Nouvelle catégorie"></select>
+          <button id="apply-bulk-category" type="button" disabled>Appliquer la catégorie</button>
+        </div>
         <div class="table-wrap">
           <table>
             <thead>
               <tr>
+                <th class="select-cell"><input id="select-all" type="checkbox" aria-label="Sélectionner les opérations affichées" /></th>
                 <th>Date</th>
                 <th>Libellé</th>
                 <th>Catégorie</th>
@@ -99,7 +105,7 @@
             </thead>
             <tbody id="transaction-table">
               <tr>
-                <td colspan="5" class="empty-state">Place des fichiers CSV dans le répertoire data, puis lance le serveur local.</td>
+                <td colspan="6" class="empty-state">Place des fichiers CSV dans le répertoire data, puis lance le serveur local.</td>
               </tr>
             </tbody>
           </table>
@@ -107,6 +113,6 @@
       </section>
     </main>
 
-    <script src="dashboard.js"></script>
+    <script src="dashboard.js?v=5"></script>
   </body>
 </html>

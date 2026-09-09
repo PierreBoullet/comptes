@@ -2,3 +2,5 @@ __pycache__/
 .venv/
 .env
 bank_sync.json
+reference.sqlite3
+imported_files/

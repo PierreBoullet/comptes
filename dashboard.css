@@ -350,6 +350,34 @@ select {
   overflow-x: auto;
 }
 
+.bulk-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -4px 0 14px;
+}
+
+.bulk-actions > span {
+  color: var(--muted);
+  margin-right: auto;
+}
+
+.bulk-actions select {
+  max-width: 220px;
+}
+
+.select-cell {
+  text-align: center;
+  width: 42px;
+}
+
+.select-cell input {
+  accent-color: var(--accent);
+  height: 16px;
+  width: 16px;
+}
+
 table {
   width: 100%;
   min-width: 720px;

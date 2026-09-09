@@ -2,7 +2,7 @@
 
 ## Tableau de bord web
 
-La page charge automatiquement tous les fichiers CSV présents dans le répertoire `data`. Tout est calculé localement : aucune donnée bancaire n'est envoyée ailleurs.
+La page affiche les opérations depuis une base SQLite locale de référence. Tout est calculé localement : aucune donnée bancaire n'est envoyée ailleurs.
 
 ```bash
 cd /home/pboullet/Perso/comptes
@@ -11,7 +11,7 @@ python3 server.py
 
 Puis ouvre : <http://localhost:8765/dashboard.html>
 
-Le serveur local fournit la page web, la liste des fichiers `data/*.csv` et la sauvegarde des corrections faites dans le tableau.
+Le serveur local importe les nouveaux CSV déposés dans `data`, les déplace dans `imported_files`, puis sauvegarde les corrections dans `reference.sqlite3`.
 
 La page accepte les exports avec des colonnes usuelles : `Date`, `Libellé`, `Montant`, ou bien `Débit` / `Crédit`. Si un CSV contient déjà `Catégorie` et `Source`, ces colonnes sont conservées.
 
@@ -20,13 +20,13 @@ Pour ajouter de nouvelles opérations plus tard :
 1. Connecte-toi manuellement au site de ta banque ou à Linxo.
 2. Télécharge l'export CSV des opérations.
 3. Place le fichier CSV dans le répertoire `data`.
-4. Clique sur `Actualiser les CSV` dans la page.
+4. Clique sur `Importer les nouveaux CSV` dans la page.
 
 ## Récupération manuelle du CSV
 
 Ce mode évite de stocker ou d'automatiser des identifiants bancaires. L'authentification reste faite dans le navigateur, directement auprès de la banque ou de Linxo.
 
-Le dashboard recharge tous les fichiers `*.csv` présents dans `data`. Tu peux donc conserver plusieurs exports, par exemple un fichier par mois.
+Le dashboard ne relit pas les CSV archivés : il affiche la base de référence. Les fichiers `*.csv` déposés dans `data` sont importés une seule fois, puis déplacés dans `imported_files`. Les catégories et libellés modifiés restent donc indépendants des fichiers d'origine.
 
 Formats attendus :
 
@@ -67,7 +67,7 @@ Fonctions disponibles :
 - Modification du libellé et de la catégorie directement dans le tableau des opérations.
 - Export des opérations classées au format CSV.
 
-Les modifications faites dans le tableau sont sauvegardées dans le fichier CSV d'origine situé dans `data`.
+Les modifications faites dans le tableau sont sauvegardées dans `reference.sqlite3`. Les CSV d'origine sont conservés dans `imported_files` comme archive.
 
 Les règles de catégorisation sont dans `categories.json`. Elles suivent deux niveaux : `type` (`Recettes` ou `Dépenses`), puis `category` (`Courses`, `Salaires`, etc.).
 

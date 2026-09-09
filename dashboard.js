@@ -1,11 +1,13 @@
 const colors = ["#0f766e", "#b45309", "#1d4ed8", "#be123c", "#6d5f13", "#047857", "#9333ea", "#475569", "#c2410c"];
 const initialBalance = -951.4;
+const filtersKey = "comptes.filters";
 
 const state = {
   transactions: [],
   filtered: [],
   categorySegments: [],
   categoryRules: [],
+  selectedKeys: new Set(),
 };
 
 const elements = {
@@ -25,6 +27,10 @@ const elements = {
   monthlyChart: document.querySelector("#monthly-chart"),
   table: document.querySelector("#transaction-table"),
   status: document.querySelector("#import-status"),
+  selectedCount: document.querySelector("#selected-count"),
+  bulkCategory: document.querySelector("#bulk-category"),
+  applyBulkCategory: document.querySelector("#apply-bulk-category"),
+  selectAll: document.querySelector("#select-all"),
 };
 
 const floatingTooltip = document.createElement("div");
@@ -163,35 +169,35 @@ function transactionsFromRows(rows, sourceName) {
 }
 
 async function loadDataFiles() {
-  elements.status.textContent = "Chargement des CSV du répertoire data...";
+  elements.status.textContent = "Chargement de la base de référence...";
   try {
     const categoriesResponse = await fetch("/categories.json");
     if (!categoriesResponse.ok) throw new Error("Impossible de lire categories.json.");
     state.categoryRules = await categoriesResponse.json();
 
-    const response = await fetch("/api/csv-files");
-    if (!response.ok) throw new Error("Impossible de lister le répertoire data. Lance le serveur avec python server.py.");
+    const response = await fetch("/api/transactions");
+    if (!response.ok) throw new Error("Impossible de lire la base de référence. Lance le serveur avec python server.py.");
 
-    const files = await response.json();
-    if (!files.length) {
+    const payload = await response.json();
+    if (!payload.transactions.length) {
       state.transactions = [];
       state.filtered = [];
       updateFilters();
       render();
-      elements.status.textContent = "Aucun fichier CSV trouvé dans data.";
+      elements.status.textContent = "Aucune opération dans la base de référence.";
       return;
     }
 
-    const loaded = await Promise.all(files.map(async (file) => {
-      const csvResponse = await fetch(file.url);
-      if (!csvResponse.ok) throw new Error(`Impossible de lire ${file.name}`);
-      return transactionsFromRows(parseCsv(await csvResponse.text()), file.name);
+    state.transactions = payload.transactions.map((transaction) => ({
+      ...transaction,
+      date: parseDate(transaction.date),
+      csvFile: transaction.source_file,
+      csvRow: transaction.source_row,
     }));
-
-    state.transactions = loaded.flat();
     updateFilters();
+    restoreFilters();
     applyFilters();
-    elements.status.textContent = `${state.transactions.length} opérations chargées depuis ${files.length} fichier${files.length > 1 ? "s" : ""} CSV.`;
+    elements.status.textContent = `${state.transactions.length} opérations chargées depuis la base de référence.`;
   } catch (error) {
     state.transactions = [];
     state.filtered = [];
@@ -238,6 +244,50 @@ function categoryOptions(selectedCategory) {
   }).join("");
 }
 
+function transactionKey(transaction) {
+  return String(transaction.id);
+}
+
+function refreshBulkControls() {
+  const visibleKeys = state.filtered.map(transactionKey);
+  const selectedVisible = visibleKeys.filter((key) => state.selectedKeys.has(key));
+  elements.selectedCount.textContent = String(state.selectedKeys.size);
+  elements.applyBulkCategory.disabled = selectedVisible.length === 0;
+  elements.selectAll.checked = visibleKeys.length > 0 && selectedVisible.length === visibleKeys.length;
+  elements.selectAll.indeterminate = selectedVisible.length > 0 && selectedVisible.length < visibleKeys.length;
+}
+
+async function persistTransactionCategory(transaction, category) {
+  const response = await fetch(`/api/transactions/${transaction.id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ label: transaction.label, category }),
+  });
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.error || "La sauvegarde a échoué.");
+}
+
+async function applyBulkCategory() {
+  const category = elements.bulkCategory.value;
+  const selected = state.transactions.filter((transaction) => state.selectedKeys.has(transactionKey(transaction)));
+  if (!category || !selected.length) return;
+
+  elements.applyBulkCategory.disabled = true;
+  elements.status.textContent = `Modification de ${selected.length} écriture(s) en cours...`;
+  try {
+    for (const transaction of selected) {
+      await persistTransactionCategory(transaction, category);
+    }
+    selected.forEach((transaction) => { transaction.category = category; });
+    state.selectedKeys.clear();
+    applyFilters();
+    elements.status.textContent = `${selected.length} écriture(s) modifiée(s).`;
+  } catch (error) {
+    elements.status.textContent = error.message;
+    refreshBulkControls();
+  }
+}
+
 async function saveTransactionEdit(transaction, updates) {
   const nextLabel = updates.label ?? transaction.label;
   const nextCategory = updates.category ?? transaction.category;
@@ -248,14 +298,13 @@ async function saveTransactionEdit(transaction, updates) {
   elements.status.textContent = "Sauvegarde de la modification...";
 
   try {
-    const response = await fetch(`/api/csv-files/${encodeURIComponent(transaction.csvFile)}/rows/${transaction.csvRow}`, {
+    const response = await fetch(`/api/transactions/${transaction.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ label: nextLabel, category: nextCategory }),
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "La sauvegarde a échoué.");
-    updateFilters();
     applyFilters();
     elements.status.textContent = "Modification sauvegardée.";
   } catch (error) {
@@ -271,6 +320,8 @@ function applyFilters() {
   const selectedCategory = elements.category.value;
   const searched = normalize(elements.search.value);
 
+  saveFilters();
+
   state.filtered = state.transactions.filter((transaction) => {
     const matchesMonth = selectedMonth === "all" || monthKey(transaction.date) === selectedMonth;
     const matchesCategory = selectedCategory === "all" || transaction.category === selectedCategory;
@@ -282,15 +333,68 @@ function applyFilters() {
 }
 
 function updateFilters() {
+  const selectedMonth = elements.month.value;
+  const selectedCategory = elements.category.value;
   const months = [...new Set(state.transactions.map((transaction) => monthKey(transaction.date)))].sort().reverse();
   const categoriesByType = new Map([["Recettes", new Set()], ["Dépenses", new Set()]]);
   state.transactions.forEach((transaction) => categoriesByType.get(transaction.type)?.add(transaction.category));
+  if (selectedCategory !== "all") {
+    const selectedType = state.categoryRules.find((rule) => rule.category === selectedCategory)?.type || "Dépenses";
+    categoriesByType.get(selectedType).add(selectedCategory);
+  }
 
   elements.month.innerHTML = '<option value="all">Tous</option>' + months.map((key) => `<option value="${escapeHtml(key)}">${escapeHtml(monthLabel(key))}</option>`).join("");
   elements.category.innerHTML = '<option value="all">Toutes</option>' + [...categoriesByType.entries()].map(([type, categories]) => {
     const options = [...categories].sort((a, b) => a.localeCompare(b, "fr"));
     return options.length ? `<optgroup label="${type}">${options.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}</optgroup>` : "";
   }).join("");
+  if ([...elements.month.options].some((option) => option.value === selectedMonth)) {
+    elements.month.value = selectedMonth;
+  }
+  if ([...elements.category.options].some((option) => option.value === selectedCategory)) {
+    elements.category.value = selectedCategory;
+  }
+}
+
+function saveFilters() {
+  const filters = {
+    month: elements.month.value,
+    category: elements.category.value,
+    search: elements.search.value,
+  };
+  localStorage.setItem(filtersKey, JSON.stringify(filters));
+  const url = new URL(window.location.href);
+  url.searchParams.set("month", filters.month);
+  url.searchParams.set("category", filters.category);
+  url.searchParams.set("search", filters.search);
+  window.history.replaceState(null, "", url);
+}
+
+function restoreFilters() {
+  const params = new URLSearchParams(window.location.search);
+  let stored = null;
+  try {
+    stored = JSON.parse(localStorage.getItem(filtersKey) || "null");
+  } catch {
+    stored = null;
+  }
+  const saved = {
+    month: params.get("month") || stored?.month || "all",
+    category: params.get("category") || stored?.category || "all",
+    search: params.get("search") ?? stored?.search ?? "",
+  };
+  if (!saved) return;
+
+  if (saved.category && saved.category !== "all" && ![...elements.category.options].some((option) => option.value === saved.category)) {
+    elements.category.insertAdjacentHTML("beforeend", `<option value="${escapeHtml(saved.category)}">${escapeHtml(saved.category)}</option>`);
+  }
+  if ([...elements.month.options].some((option) => option.value === saved.month)) {
+    elements.month.value = saved.month;
+  }
+  if ([...elements.category.options].some((option) => option.value === saved.category)) {
+    elements.category.value = saved.category;
+  }
+  elements.search.value = saved.search || "";
 }
 
 function render() {
@@ -412,12 +516,15 @@ function renderMonthlyChart() {
 function renderTable() {
   const sorted = [...state.filtered].sort((left, right) => (right.date?.getTime() || 0) - (left.date?.getTime() || 0));
   elements.table.innerHTML = sorted.length ? sorted.map((transaction) => `<tr data-csv-file="${escapeHtml(transaction.csvFile)}" data-csv-row="${transaction.csvRow}">
+    <td class="select-cell"><input class="row-select" type="checkbox" ${state.selectedKeys.has(transactionKey(transaction)) ? "checked" : ""} aria-label="Sélectionner ${escapeHtml(transaction.label)}" /></td>
     <td>${transaction.date ? new Intl.DateTimeFormat("fr-FR").format(transaction.date) : ""}</td>
     <td><input class="table-edit" data-field="label" type="text" value="${escapeHtml(transaction.label)}" aria-label="Modifier le libellé" /></td>
     <td><select class="table-edit" data-field="category" aria-label="Modifier la catégorie">${categoryOptions(transaction.category)}</select></td>
     <td>${escapeHtml(transaction.source || "")}</td>
     <td class="amount-cell ${transaction.amount >= 0 ? "positive" : "negative"}">${formatCurrency(transaction.amount)}</td>
-  </tr>`).join("") : '<tr><td colspan="5" class="empty-state">Aucune opération ne correspond aux filtres.</td></tr>';
+  </tr>`).join("") : '<tr><td colspan="6" class="empty-state">Aucune opération ne correspond aux filtres.</td></tr>';
+  elements.bulkCategory.innerHTML = categoryOptions("");
+  refreshBulkControls();
 }
 
 function transactionFromEditedControl(control) {
@@ -463,10 +570,29 @@ elements.donut.addEventListener("click", (event) => {
   applyFilters();
   hideFloatingTooltip();
 });
-elements.month.addEventListener("change", applyFilters);
-elements.category.addEventListener("change", applyFilters);
-elements.search.addEventListener("input", applyFilters);
+elements.month.addEventListener("change", () => {
+  saveFilters();
+  applyFilters();
+});
+elements.category.addEventListener("change", () => {
+  saveFilters();
+  applyFilters();
+});
+elements.search.addEventListener("input", () => {
+  saveFilters();
+  applyFilters();
+});
 elements.exportCsv.addEventListener("click", exportCategorizedCsv);
+window.addEventListener("beforeunload", saveFilters);
+elements.applyBulkCategory.addEventListener("click", applyBulkCategory);
+elements.selectAll.addEventListener("change", () => {
+  state.filtered.forEach((transaction) => {
+    const key = transactionKey(transaction);
+    if (elements.selectAll.checked) state.selectedKeys.add(key);
+    else state.selectedKeys.delete(key);
+  });
+  renderTable();
+});
 elements.table.addEventListener("change", (event) => {
   const control = event.target.closest(".table-edit");
   if (!control) return;
@@ -475,6 +601,16 @@ elements.table.addEventListener("change", (event) => {
   const value = control.value.trim();
   if (!value || value === transaction[control.dataset.field]) return;
   saveTransactionEdit(transaction, { [control.dataset.field]: value });
+});
+elements.table.addEventListener("change", (event) => {
+  const control = event.target.closest(".row-select");
+  if (!control) return;
+  const transaction = transactionFromEditedControl(control);
+  if (!transaction) return;
+  const key = transactionKey(transaction);
+  if (control.checked) state.selectedKeys.add(key);
+  else state.selectedKeys.delete(key);
+  refreshBulkControls();
 });
 
 render();

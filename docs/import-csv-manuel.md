@@ -1,6 +1,6 @@
 # Import CSV manuel
 
-Le dashboard fonctionne avec tous les fichiers CSV présents dans le répertoire `data`.
+Le dashboard utilise une base SQLite locale comme source de référence. Les nouveaux CSV sont déposés temporairement dans `data`, importés dans cette base, puis archivés dans `imported_files`.
 
 ## Utilisation
 
@@ -8,7 +8,7 @@ Le dashboard fonctionne avec tous les fichiers CSV présents dans le répertoire
 2. Télécharge l'export CSV des opérations.
 3. Copie le fichier dans `data`.
 4. Ouvre ou recharge `http://localhost:8765/dashboard.html`.
-5. Clique sur `Actualiser les CSV` si la page est déjà ouverte.
+5. Clique sur `Importer les nouveaux CSV` si la page est déjà ouverte.
 
 ## Colonnes reconnues
 
@@ -38,6 +38,6 @@ Si `Catégorie` n'existe pas, le dashboard applique ses règles automatiques et 
 
 ## Correction dans le dashboard
 
-Tu peux modifier le libellé et la catégorie depuis le tableau. Les changements sont sauvegardés dans le CSV d'origine situé dans `data`.
+Tu peux modifier le libellé et la catégorie depuis le tableau. Les changements sont sauvegardés dans `reference.sqlite3`, et ne sont pas perdus lors d'un nouvel import.
 
 Pour éviter les doublons, garde idéalement une convention de nommage simple, par exemple `cmb-2026-09.csv`, `cmb-2026-10.csv`.
