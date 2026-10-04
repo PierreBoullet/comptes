@@ -2,4 +2,6 @@ __pycache__/
 .venv/
 .env
 bank_sync.json
+data/.powens-state.json
 imported_files/
+.DS_Store

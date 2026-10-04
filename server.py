@@ -102,14 +102,43 @@ def initialize_database() -> sqlite3.Connection:
             UNIQUE(source_file, source_row)
         )
     """)
+    columns = {row[1] for row in connection.execute("PRAGMA table_info(transactions)")}
+    if "assignment_month" not in columns:
+        connection.execute("ALTER TABLE transactions ADD COLUMN assignment_month TEXT")
     connection.execute("""
         CREATE TABLE IF NOT EXISTS imports (
             source_file TEXT PRIMARY KEY,
             imported_at TEXT NOT NULL
         )
     """)
+    remove_duplicate_bank_transactions(connection)
     connection.commit()
     return connection
+
+
+def is_bank_statement(source_file: str) -> bool:
+    return source_file.upper().startswith("RELEVE_")
+
+
+def transaction_fingerprint(date: str | None, label: str, amount: float, transaction_type: str) -> tuple[str | None, str, int, str]:
+    return date, normalize(label), round(amount * 100), transaction_type
+
+
+def remove_duplicate_bank_transactions(connection: sqlite3.Connection) -> None:
+    rows = connection.execute(
+        "SELECT id, source_file, date, label, amount, type FROM transactions "
+        "WHERE source_file LIKE 'RELEVE_%' ORDER BY id"
+    ).fetchall()
+    seen: set[tuple[str | None, str, int, str]] = set()
+    duplicate_ids: list[int] = []
+    for row in rows:
+        fingerprint = transaction_fingerprint(row["date"], row["label"], row["amount"], row["type"])
+        if fingerprint in seen:
+            duplicate_ids.append(row["id"])
+        else:
+            seen.add(fingerprint)
+    if duplicate_ids:
+        connection.executemany("DELETE FROM transactions WHERE id = ?", ((transaction_id,) for transaction_id in duplicate_ids))
 
 
 def import_pending_files(connection: sqlite3.Connection) -> int:
@@ -133,6 +162,12 @@ def import_pending_files(connection: sqlite3.Connection) -> int:
         if not label_header or not (amount_header or debit_header or credit_header):
             raise ValueError(f"{path.name}: colonnes attendues Date, Libellé, Montant ou Débit/Crédit")
 
+        existing_bank_transactions = {
+            transaction_fingerprint(row["date"], row["label"], row["amount"], row["type"])
+            for row in connection.execute(
+                "SELECT date, label, amount, type FROM transactions WHERE source_file LIKE 'RELEVE_%'"
+            )
+        }
         for row_number, row in enumerate(rows, start=2):
             label = str(row.get(label_header, "")).strip().replace("\n", " ")
             amount = parse_amount(row.get(amount_header, "")) if amount_header else parse_amount(row.get(credit_header, "")) - parse_amount(row.get(debit_header, ""))
@@ -144,10 +179,16 @@ def import_pending_files(connection: sqlite3.Connection) -> int:
             category = category or (matching_rule or {}).get("category", "Divers")
             transaction_type = (matching_rule or {}).get("type") or ("Recettes" if amount >= 0 else "Dépenses")
             source = str(row.get(source_header, "")).strip() if source_header else path.name
+            parsed_date = parse_date(row.get(date_header, "")) if date_header else None
+            if is_bank_statement(path.name):
+                fingerprint = transaction_fingerprint(parsed_date, label, amount, transaction_type)
+                if fingerprint in existing_bank_transactions:
+                    continue
+                existing_bank_transactions.add(fingerprint)
             connection.execute("""
-                INSERT INTO transactions(source_file, source_row, date, label, amount, category, type, source)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            """, (path.name, row_number, parse_date(row.get(date_header, "")) if date_header else None, label, amount, category, transaction_type, source))
+                INSERT INTO transactions(source_file, source_row, date, label, amount, category, type, source, assignment_month)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (path.name, row_number, parsed_date, label, amount, category, transaction_type, source, None))
 
         connection.execute("INSERT INTO imports(source_file, imported_at) VALUES (?, datetime('now'))", (path.name,))
         connection.commit()
@@ -159,6 +200,12 @@ def import_pending_files(connection: sqlite3.Connection) -> int:
 class DashboardHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
+
+    def end_headers(self) -> None:
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        super().end_headers()
 
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
@@ -204,7 +251,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         connection = initialize_database()
         try:
             import_pending_files(connection)
-            rows = connection.execute("SELECT id, date, label, amount, category, type, source, source_file, source_row FROM transactions ORDER BY date DESC, id DESC").fetchall()
+            rows = connection.execute("SELECT id, date, assignment_month, label, amount, category, type, source, source_file, source_row FROM transactions ORDER BY date DESC, id DESC").fetchall()
             self.send_json(200, {"transactions": [dict(row) for row in rows]})
         finally:
             connection.close()
@@ -269,12 +316,18 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             payload = json.loads(self.rfile.read(length).decode("utf-8"))
             label = str(payload.get("label", "")).strip()
             category = str(payload.get("category", "")).strip()
+            assignment_month = payload.get("assignment_month")
+            if assignment_month == "":
+                assignment_month = None
+            if assignment_month is not None and not re.fullmatch(r"\d{4}-\d{2}", str(assignment_month)):
+                self.send_json(400, {"error": "Assignment month must use YYYY-MM format"})
+                return
             if not label or not category:
                 self.send_json(400, {"error": "Label and category are required"})
                 return
             connection = initialize_database()
             try:
-                cursor = connection.execute("UPDATE transactions SET label = ?, category = ? WHERE id = ?", (label, category, transaction_id))
+                cursor = connection.execute("UPDATE transactions SET label = ?, category = ?, assignment_month = ? WHERE id = ?", (label, category, assignment_month, transaction_id))
                 connection.commit()
             finally:
                 connection.close()

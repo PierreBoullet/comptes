@@ -348,6 +348,7 @@ select {
 
 .table-wrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .bulk-actions {
@@ -380,29 +381,35 @@ select {
 
 table {
   width: 100%;
-  min-width: 720px;
+  min-width: 860px;
   border-collapse: collapse;
+  font-size: 0.78rem;
 }
 
 th,
 td {
   border-bottom: 1px solid var(--line);
-  padding: 12px 10px;
+  padding: 8px 7px;
   text-align: left;
   vertical-align: top;
 }
 
 th {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
 }
 
 .table-edit {
   border-color: transparent;
   background: transparent;
-  min-width: 160px;
-  padding: 7px 8px;
+  min-width: 132px;
+  padding: 5px 6px;
+  font-size: 0.78rem;
+}
+
+.assignment-month {
+  min-width: 128px;
 }
 
 .table-edit:hover,
@@ -460,5 +467,40 @@ th {
   .donut {
     width: min(220px, 100%);
     justify-self: center;
+  }
+
+  table {
+    font-size: 0.74rem;
+  }
+
+  th,
+  td {
+    padding: 7px 6px;
+  }
+
+  .table-edit {
+    font-size: 0.74rem;
+    min-width: 118px;
+  }
+}
+
+@media (max-width: 880px) and (orientation: landscape) {
+  .shell {
+    width: min(1400px, calc(100% - 20px));
+    padding: 16px 0;
+  }
+
+  .operations-panel {
+    padding: 12px;
+  }
+
+  .operations-panel .panel-heading {
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .bulk-actions {
+    margin-bottom: 8px;
   }
 }

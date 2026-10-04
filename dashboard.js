@@ -216,6 +216,10 @@ function monthKey(date) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
 }
 
+function transactionMonthKey(transaction) {
+  return transaction.assignment_month || monthKey(transaction.date);
+}
+
 function monthLabel(key) {
   if (key === "Sans date") return key;
   const [year, month] = key.split("-").map(Number);
@@ -261,7 +265,7 @@ async function persistTransactionCategory(transaction, category) {
   const response = await fetch(`/api/transactions/${transaction.id}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ label: transaction.label, category }),
+    body: JSON.stringify({ label: transaction.label, category, assignment_month: transaction.assignment_month || "" }),
   });
   const result = await response.json();
   if (!response.ok) throw new Error(result.error || "La sauvegarde a échoué.");
@@ -291,17 +295,19 @@ async function applyBulkCategory() {
 async function saveTransactionEdit(transaction, updates) {
   const nextLabel = updates.label ?? transaction.label;
   const nextCategory = updates.category ?? transaction.category;
-  const previous = { label: transaction.label, category: transaction.category };
+  const nextAssignmentMonth = updates.assignment_month ?? transaction.assignment_month ?? "";
+  const previous = { label: transaction.label, category: transaction.category, assignment_month: transaction.assignment_month };
 
   transaction.label = nextLabel;
   transaction.category = nextCategory;
+  transaction.assignment_month = nextAssignmentMonth || null;
   elements.status.textContent = "Sauvegarde de la modification...";
 
   try {
     const response = await fetch(`/api/transactions/${transaction.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ label: nextLabel, category: nextCategory }),
+      body: JSON.stringify({ label: nextLabel, category: nextCategory, assignment_month: nextAssignmentMonth }),
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "La sauvegarde a échoué.");
@@ -310,6 +316,7 @@ async function saveTransactionEdit(transaction, updates) {
   } catch (error) {
     transaction.label = previous.label;
     transaction.category = previous.category;
+    transaction.assignment_month = previous.assignment_month;
     applyFilters();
     elements.status.textContent = error.message;
   }
@@ -323,7 +330,7 @@ function applyFilters() {
   saveFilters();
 
   state.filtered = state.transactions.filter((transaction) => {
-    const matchesMonth = selectedMonth === "all" || monthKey(transaction.date) === selectedMonth;
+    const matchesMonth = selectedMonth === "all" || transactionMonthKey(transaction) === selectedMonth;
     const matchesCategory = selectedCategory === "all" || transaction.category === selectedCategory;
     const matchesSearch = !searched || normalize(transaction.label).includes(searched);
     return matchesMonth && matchesCategory && matchesSearch;
@@ -335,7 +342,7 @@ function applyFilters() {
 function updateFilters() {
   const selectedMonth = elements.month.value;
   const selectedCategory = elements.category.value;
-  const months = [...new Set(state.transactions.map((transaction) => monthKey(transaction.date)))].sort().reverse();
+  const months = [...new Set(state.transactions.map(transactionMonthKey))].sort().reverse();
   const categoriesByType = new Map([["Recettes", new Set()], ["Dépenses", new Set()]]);
   state.transactions.forEach((transaction) => categoriesByType.get(transaction.type)?.add(transaction.category));
   if (selectedCategory !== "all") {
@@ -488,7 +495,7 @@ function segmentFromDonutEvent(event) {
 function renderMonthlyChart() {
   const byMonth = new Map();
   state.filtered.forEach((transaction) => {
-    const key = monthKey(transaction.date);
+    const key = transactionMonthKey(transaction);
     const current = byMonth.get(key) || { income: 0, expense: 0 };
     if (transaction.amount > 0) current.income += transaction.amount;
     if (transaction.amount < 0) current.expense += Math.abs(transaction.amount);
@@ -520,7 +527,7 @@ function renderTable() {
     <td>${transaction.date ? new Intl.DateTimeFormat("fr-FR").format(transaction.date) : ""}</td>
     <td><input class="table-edit" data-field="label" type="text" value="${escapeHtml(transaction.label)}" aria-label="Modifier le libellé" /></td>
     <td><select class="table-edit" data-field="category" aria-label="Modifier la catégorie">${categoryOptions(transaction.category)}</select></td>
-    <td>${escapeHtml(transaction.source || "")}</td>
+    <td><input class="table-edit assignment-month" data-field="assignment_month" type="month" value="${escapeHtml(transaction.assignment_month || "")}" aria-label="Modifier le mois d'affectation" /></td>
     <td class="amount-cell ${transaction.amount >= 0 ? "positive" : "negative"}">${formatCurrency(transaction.amount)}</td>
   </tr>`).join("") : '<tr><td colspan="6" class="empty-state">Aucune opération ne correspond aux filtres.</td></tr>';
   elements.bulkCategory.innerHTML = categoryOptions("");
@@ -536,9 +543,10 @@ function transactionFromEditedControl(control) {
 }
 
 function exportCategorizedCsv() {
-  const headers = ["Date", "Libellé", "Catégorie", "Source", "Montant"];
+  const headers = ["Date bancaire", "Mois d'affectation", "Libellé", "Catégorie", "Source", "Montant"];
   const lines = [headers, ...state.filtered.map((transaction) => [
     transaction.date ? new Intl.DateTimeFormat("fr-FR").format(transaction.date) : "",
+    transaction.assignment_month || transactionMonthKey(transaction),
     transaction.label,
     transaction.category,
     transaction.source || "",
@@ -599,7 +607,8 @@ elements.table.addEventListener("change", (event) => {
   const transaction = transactionFromEditedControl(control);
   if (!transaction) return;
   const value = control.value.trim();
-  if (!value || value === transaction[control.dataset.field]) return;
+  if (control.dataset.field !== "assignment_month" && !value) return;
+  if (value === (transaction[control.dataset.field] || "")) return;
   saveTransactionEdit(transaction, { [control.dataset.field]: value });
 });
 elements.table.addEventListener("change", (event) => {

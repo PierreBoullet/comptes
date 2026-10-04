@@ -17,10 +17,11 @@ La page accepte les exports avec des colonnes usuelles : `Date`, `Libellé`, `Mo
 
 Pour ajouter de nouvelles opérations plus tard :
 
-1. Connecte-toi manuellement au site de ta banque ou à Linxo.
-2. Télécharge l'export CSV des opérations.
-3. Place le fichier CSV dans le répertoire `data`.
-4. Clique sur `Importer les nouveaux CSV` dans la page.
+1. Pour le CMB, configure la synchronisation PSD2 via [Powens](docs/powens.md).
+2. Lance `python scripts/sync_powens.py --days 90` avec `POWENS_DOMAIN` et `POWENS_USER_TOKEN`.
+3. Recharge le dashboard pour importer le CSV généré.
+
+L'import CSV manuel reste disponible : voir [docs/import-csv-manuel.md](docs/import-csv-manuel.md).
 
 ## Récupération manuelle du CSV
 
