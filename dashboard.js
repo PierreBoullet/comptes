@@ -101,6 +101,17 @@ function parseAmount(value) {
   return Number.isFinite(amount) ? amount : 0;
 }
 
+function parseSearchAmount(value) {
+  const cleaned = String(value || "")
+    .trim()
+    .replace(/^(?:€|EUR)\s*/i, "")
+    .replace(/\s*(?:€|EUR)$/i, "")
+    .replace(/\s/g, "");
+  if (!/^[+-]?(?:\d+(?:[.,]\d{1,2})?|[.,]\d{1,2})$/.test(cleaned)) return null;
+  const amount = Number(cleaned.replace(",", "."));
+  return Number.isFinite(amount) ? { amount, hasSign: /^[+-]/.test(cleaned) } : null;
+}
+
 function parseDate(value) {
   const text = String(value || "").trim();
   const iso = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
@@ -326,13 +337,17 @@ function applyFilters() {
   const selectedMonth = elements.month.value;
   const selectedCategory = elements.category.value;
   const searched = normalize(elements.search.value);
+  const searchedAmount = parseSearchAmount(elements.search.value);
 
   saveFilters();
 
   state.filtered = state.transactions.filter((transaction) => {
     const matchesMonth = selectedMonth === "all" || transactionMonthKey(transaction) === selectedMonth;
     const matchesCategory = selectedCategory === "all" || transaction.category === selectedCategory;
-    const matchesSearch = !searched || normalize(transaction.label).includes(searched);
+    const amountMatches = searchedAmount && (searchedAmount.hasSign
+      ? Math.round(transaction.amount * 100) === Math.round(searchedAmount.amount * 100)
+      : Math.round(Math.abs(transaction.amount) * 100) === Math.round(searchedAmount.amount * 100));
+    const matchesSearch = !searched || normalize(transaction.label).includes(searched) || amountMatches;
     return matchesMonth && matchesCategory && matchesSearch;
   });
 
