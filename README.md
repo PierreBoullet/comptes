@@ -65,10 +65,11 @@ Fonctions disponibles :
 - Répartition des dépenses par catégorie.
 - Evolution mensuelle recettes/dépenses.
 - Filtres par mois, catégorie et libellé.
+- Onglet de gestion des catégories avec création de catégories « Recettes » ou « Dépenses ».
 - Modification du libellé et de la catégorie directement dans le tableau des opérations.
 - Export des opérations classées au format CSV.
 
-Les modifications faites dans le tableau sont sauvegardées dans `reference.sqlite3`. Les CSV d'origine sont conservés dans `imported_files` comme archive.
+Les modifications faites dans le tableau et les catégories créées sont sauvegardées dans `reference.sqlite3`. Les catégories et règles déjà présentes dans `categories.json` sont importées dans la base lors de sa première initialisation. Les CSV d'origine sont conservés dans `imported_files` comme archive.
 
 Les règles de catégorisation sont dans `categories.json`. Elles suivent deux niveaux : `type` (`Recettes` ou `Dépenses`), puis `category` (`Courses`, `Salaires`, etc.).
 

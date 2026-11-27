@@ -111,9 +111,69 @@ def initialize_database() -> sqlite3.Connection:
             imported_at TEXT NOT NULL
         )
     """)
+    connection.execute("""
+        CREATE TABLE IF NOT EXISTS categories (
+            name TEXT PRIMARY KEY COLLATE NOCASE,
+            type TEXT NOT NULL CHECK(type IN ('Recettes', 'Dépenses'))
+        )
+    """)
+    connection.execute("""
+        CREATE TABLE IF NOT EXISTS category_rules (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            matches TEXT NOT NULL,
+            category TEXT NOT NULL,
+            type TEXT NOT NULL
+        )
+    """)
+    migrate_categories(connection)
     remove_duplicate_bank_transactions(connection)
     connection.commit()
     return connection
+
+
+def migrate_categories(connection: sqlite3.Connection) -> None:
+    has_categories = connection.execute("SELECT 1 FROM categories LIMIT 1").fetchone()
+    if not has_categories:
+        rules_path = ROOT / "categories.json"
+        rules = json.loads(rules_path.read_text(encoding="utf-8")) if rules_path.exists() else []
+        for rule in rules:
+            category = str(rule.get("category", "")).strip()
+            if not category:
+                continue
+            category_type = rule.get("type") if rule.get("type") in ("Recettes", "Dépenses") else "Dépenses"
+            connection.execute("INSERT OR IGNORE INTO categories(name, type) VALUES (?, ?)", (category, category_type))
+            matches = rule.get("match", [])
+            if isinstance(matches, list) and matches:
+                connection.execute(
+                    "INSERT INTO category_rules(matches, category, type) VALUES (?, ?, ?)",
+                    (json.dumps(matches, ensure_ascii=False), category, category_type),
+                )
+        connection.execute("INSERT OR IGNORE INTO categories(name, type) VALUES (?, ?)", ("Divers", "Dépenses"))
+
+    transactions = connection.execute("SELECT DISTINCT category, type FROM transactions").fetchall()
+    for row in transactions:
+        category = str(row["category"] or "").strip()
+        if not category:
+            continue
+        category_type = row["type"] if row["type"] in ("Recettes", "Dépenses") else "Dépenses"
+        connection.execute("INSERT OR IGNORE INTO categories(name, type) VALUES (?, ?)", (category, category_type))
+
+
+def categories_payload(connection: sqlite3.Connection) -> dict[str, object]:
+    migrate_categories(connection)
+    categories = [
+        dict(row)
+        for row in connection.execute("SELECT name, type FROM categories ORDER BY type, name COLLATE NOCASE")
+    ]
+    rules = [
+        {
+            "match": json.loads(row["matches"]),
+            "category": row["category"],
+            "type": row["type"],
+        }
+        for row in connection.execute("SELECT matches, category, type FROM category_rules ORDER BY id")
+    ]
+    return {"categories": categories, "rules": rules}
 
 
 def is_bank_statement(source_file: str) -> bool:
@@ -145,8 +205,14 @@ def import_pending_files(connection: sqlite3.Connection) -> int:
     DATA_DIR.mkdir(exist_ok=True)
     IMPORTED_DIR.mkdir(exist_ok=True)
     imported_count = 0
-    rules_path = ROOT / "categories.json"
-    rules = json.loads(rules_path.read_text(encoding="utf-8")) if rules_path.exists() else []
+    rules = [
+        {
+            "match": json.loads(row["matches"]),
+            "category": row["category"],
+            "type": row["type"],
+        }
+        for row in connection.execute("SELECT matches, category, type FROM category_rules ORDER BY id")
+    ]
 
     for path in sorted(DATA_DIR.glob("*.csv")):
         if connection.execute("SELECT 1 FROM imports WHERE source_file = ?", (path.name,)).fetchone():
@@ -215,7 +281,16 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if parsed.path == "/api/transactions":
             self.send_transactions()
             return
+        if parsed.path == "/api/categories":
+            self.send_categories()
+            return
         super().do_GET()
+
+    def do_POST(self) -> None:
+        if urlparse(self.path).path == "/api/categories":
+            self.create_category()
+            return
+        self.send_error(404)
 
     def do_PATCH(self) -> None:
         parsed = urlparse(self.path)
@@ -255,6 +330,45 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.send_json(200, {"transactions": [dict(row) for row in rows]})
         finally:
             connection.close()
+
+    def send_categories(self) -> None:
+        connection = initialize_database()
+        try:
+            self.send_json(200, categories_payload(connection))
+        finally:
+            connection.close()
+
+    def create_category(self) -> None:
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+            payload = json.loads(self.rfile.read(length).decode("utf-8"))
+            if not isinstance(payload, dict):
+                self.send_json(400, {"error": "Le corps de la requête doit être un objet JSON."})
+                return
+            name = str(payload.get("name", "")).strip()
+            category_type = str(payload.get("type", "")).strip()
+            if not name or len(name) > 80:
+                self.send_json(400, {"error": "Le nom de catégorie est requis (80 caractères maximum)."})
+                return
+            if category_type not in ("Recettes", "Dépenses"):
+                self.send_json(400, {"error": "Le type doit être Recettes ou Dépenses."})
+                return
+
+            connection = initialize_database()
+            try:
+                existing_categories = connection.execute("SELECT name FROM categories").fetchall()
+                if any(normalize(row["name"]) == normalize(name) for row in existing_categories):
+                    self.send_json(409, {"error": "Une catégorie portant ce nom existe déjà."})
+                    return
+                connection.execute("INSERT INTO categories(name, type) VALUES (?, ?)", (name, category_type))
+                connection.commit()
+            finally:
+                connection.close()
+            self.send_json(201, {"category": {"name": name, "type": category_type}})
+        except (json.JSONDecodeError, UnicodeDecodeError, TypeError) as error:
+            self.send_json(400, {"error": f"Requête invalide: {error}"})
+        except sqlite3.IntegrityError:
+            self.send_json(409, {"error": "Une catégorie portant ce nom existe déjà."})
 
     def send_json(self, status: int, data: dict[str, object]) -> None:
         payload = json.dumps(data, ensure_ascii=False).encode("utf-8")

@@ -110,6 +110,22 @@ button[disabled] {
   opacity: 0.68;
 }
 
+.dashboard-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dashboard-tab[aria-selected="false"] {
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
 .toolbar,
 .summary,
 .panel {
@@ -368,6 +384,50 @@ select {
   max-width: 220px;
 }
 
+.category-form {
+  align-items: end;
+  display: grid;
+  grid-template-columns: minmax(180px, 2fr) minmax(150px, 1fr) auto;
+  gap: 12px;
+}
+
+.category-form button {
+  white-space: nowrap;
+}
+
+.category-status {
+  color: var(--muted);
+  min-height: 1.25em;
+}
+
+.category-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.category-group {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.category-group h3 {
+  font-size: 0.95rem;
+  margin: 0 0 10px;
+}
+
+.category-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-group li {
+  border-top: 1px solid var(--line);
+  padding: 8px 0;
+}
+
 .select-cell {
   text-align: center;
   width: 42px;
@@ -460,7 +520,9 @@ th {
   .toolbar,
   .summary,
   .grid,
-  .repartition {
+  .repartition,
+  .category-form,
+  .category-groups {
     grid-template-columns: 1fr;
   }
 

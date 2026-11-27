@@ -6,6 +6,7 @@ const state = {
   transactions: [],
   filtered: [],
   categorySegments: [],
+  categories: [],
   categoryRules: [],
   selectedKeys: new Set(),
 };
@@ -31,6 +32,13 @@ const elements = {
   bulkCategory: document.querySelector("#bulk-category"),
   applyBulkCategory: document.querySelector("#apply-bulk-category"),
   selectAll: document.querySelector("#select-all"),
+  categoryForm: document.querySelector("#category-form"),
+  categoryName: document.querySelector("#category-name"),
+  categoryType: document.querySelector("#category-type"),
+  managedCategoryList: document.querySelector("#managed-category-list"),
+  categoryStatus: document.querySelector("#category-status"),
+  categorySubmit: document.querySelector("#create-category"),
+  tabs: [...document.querySelectorAll(".dashboard-tab")],
 };
 
 const floatingTooltip = document.createElement("div");
@@ -182,38 +190,36 @@ function transactionsFromRows(rows, sourceName) {
 async function loadDataFiles() {
   elements.status.textContent = "Chargement de la base de référence...";
   try {
-    const categoriesResponse = await fetch("/categories.json");
-    if (!categoriesResponse.ok) throw new Error("Impossible de lire categories.json.");
-    state.categoryRules = await categoriesResponse.json();
-
     const response = await fetch("/api/transactions");
     if (!response.ok) throw new Error("Impossible de lire la base de référence. Lance le serveur avec python server.py.");
 
     const payload = await response.json();
-    if (!payload.transactions.length) {
-      state.transactions = [];
-      state.filtered = [];
-      updateFilters();
-      render();
-      elements.status.textContent = "Aucune opération dans la base de référence.";
-      return;
-    }
-
     state.transactions = payload.transactions.map((transaction) => ({
       ...transaction,
       date: parseDate(transaction.date),
       csvFile: transaction.source_file,
       csvRow: transaction.source_row,
     }));
+    const categoriesResponse = await fetch("/api/categories");
+    if (!categoriesResponse.ok) throw new Error("Impossible de lire les catégories.");
+    const categoryPayload = await categoriesResponse.json();
+    state.categories = categoryPayload.categories;
+    state.categoryRules = categoryPayload.rules;
     updateFilters();
     restoreFilters();
     applyFilters();
-    elements.status.textContent = `${state.transactions.length} opérations chargées depuis la base de référence.`;
+    renderManagedCategories();
+    elements.status.textContent = state.transactions.length
+      ? `${state.transactions.length} opérations chargées depuis la base de référence.`
+      : "Aucune opération dans la base de référence.";
   } catch (error) {
     state.transactions = [];
     state.filtered = [];
+    state.categories = [];
+    state.categoryRules = [];
     updateFilters();
     render();
+    renderManagedCategories();
     elements.status.textContent = error.message;
   }
 }
@@ -248,7 +254,7 @@ function escapeHtml(value) {
 
 function categoryOptions(selectedCategory) {
   const categories = [...new Set([
-    ...state.categoryRules.map((rule) => rule.category),
+    ...state.categories.map((category) => category.name),
     ...state.transactions.map((transaction) => transaction.category),
     selectedCategory,
   ].filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
@@ -359,9 +365,14 @@ function updateFilters() {
   const selectedCategory = elements.category.value;
   const months = [...new Set(state.transactions.map(transactionMonthKey))].sort().reverse();
   const categoriesByType = new Map([["Recettes", new Set()], ["Dépenses", new Set()]]);
-  state.transactions.forEach((transaction) => categoriesByType.get(transaction.type)?.add(transaction.category));
+  state.categories.forEach((category) => categoriesByType.get(category.type)?.add(category.name));
+  state.transactions.forEach((transaction) => {
+    if (!state.categories.some((category) => category.name === transaction.category)) {
+      categoriesByType.get(transaction.type)?.add(transaction.category);
+    }
+  });
   if (selectedCategory !== "all") {
-    const selectedType = state.categoryRules.find((rule) => rule.category === selectedCategory)?.type || "Dépenses";
+    const selectedType = state.categories.find((category) => category.name === selectedCategory)?.type || "Dépenses";
     categoriesByType.get(selectedType).add(selectedCategory);
   }
 
@@ -376,6 +387,60 @@ function updateFilters() {
   if ([...elements.category.options].some((option) => option.value === selectedCategory)) {
     elements.category.value = selectedCategory;
   }
+}
+
+function renderManagedCategories() {
+  const categoriesByType = ["Recettes", "Dépenses"].map((type) => ({
+    type,
+    categories: state.categories
+      .filter((category) => category.type === type)
+      .sort((left, right) => left.name.localeCompare(right.name, "fr")),
+  }));
+  elements.managedCategoryList.innerHTML = categoriesByType.map(({ type, categories }) => `
+    <section class="category-group">
+      <h3>${type}</h3>
+      ${categories.length
+        ? `<ul>${categories.map((category) => `<li>${escapeHtml(category.name)}</li>`).join("")}</ul>`
+        : '<p class="empty-state">Aucune catégorie.</p>'}
+    </section>
+  `).join("");
+}
+
+async function createCategory(event) {
+  event.preventDefault();
+  const name = elements.categoryName.value.trim();
+  const type = elements.categoryType.value;
+  if (!name) return;
+
+  elements.categorySubmit.disabled = true;
+  elements.categoryStatus.textContent = "Création de la catégorie...";
+  try {
+    const response = await fetch("/api/categories", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, type }),
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || "La création de la catégorie a échoué.");
+    state.categories.push(result.category);
+    elements.categoryName.value = "";
+    updateFilters();
+    applyFilters();
+    renderManagedCategories();
+    elements.categoryStatus.textContent = `Catégorie « ${result.category.name} » créée.`;
+  } catch (error) {
+    elements.categoryStatus.textContent = error.message;
+  } finally {
+    elements.categorySubmit.disabled = false;
+  }
+}
+
+function selectTab(tab) {
+  elements.tabs.forEach((button) => {
+    const selected = button.dataset.tab === tab;
+    button.setAttribute("aria-selected", String(selected));
+    document.querySelector(`#${button.getAttribute("aria-controls")}`).hidden = !selected;
+  });
 }
 
 function saveFilters() {
@@ -608,6 +673,10 @@ elements.search.addEventListener("input", () => {
 elements.exportCsv.addEventListener("click", exportCategorizedCsv);
 window.addEventListener("beforeunload", saveFilters);
 elements.applyBulkCategory.addEventListener("click", applyBulkCategory);
+elements.categoryForm.addEventListener("submit", createCategory);
+elements.tabs.forEach((button) => {
+  button.addEventListener("click", () => selectTab(button.dataset.tab));
+});
 elements.selectAll.addEventListener("change", () => {
   state.filtered.forEach((transaction) => {
     const key = transactionKey(transaction);

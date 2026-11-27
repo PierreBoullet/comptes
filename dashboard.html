@@ -21,6 +21,12 @@
         </div>
       </section>
 
+      <nav class="dashboard-tabs" role="tablist" aria-label="Sections du tableau de bord">
+        <button class="dashboard-tab" id="operations-tab" type="button" role="tab" data-tab="operations" aria-controls="operations-panel" aria-selected="true">Opérations</button>
+        <button class="dashboard-tab" id="categories-tab" type="button" role="tab" data-tab="categories" aria-controls="categories-panel" aria-selected="false">Catégories</button>
+      </nav>
+
+      <div id="operations-panel" class="tab-panel" role="tabpanel" aria-labelledby="operations-tab">
       <section class="toolbar" aria-label="Filtres">
         <label>
           Mois
@@ -111,8 +117,32 @@
           </table>
         </div>
       </section>
+      </div>
+
+      <section id="categories-panel" class="tab-panel panel" role="tabpanel" aria-labelledby="categories-tab" hidden>
+        <div class="panel-heading">
+          <h2>Gestion des catégories</h2>
+          <span>Les catégories sont enregistrées localement.</span>
+        </div>
+        <form id="category-form" class="category-form">
+          <label for="category-name">
+            Nom de la catégorie
+            <input id="category-name" name="name" type="text" maxlength="80" required />
+          </label>
+          <label for="category-type">
+            Type
+            <select id="category-type" name="type">
+              <option value="Dépenses">Dépenses</option>
+              <option value="Recettes">Recettes</option>
+            </select>
+          </label>
+          <button id="create-category" type="submit">Créer la catégorie</button>
+        </form>
+        <p id="category-status" class="category-status" role="status" aria-live="polite"></p>
+        <div id="managed-category-list" class="category-groups"></div>
+      </section>
     </main>
 
-    <script src="dashboard.js?v=6"></script>
+    <script src="dashboard.js?v=7"></script>
   </body>
 </html>
